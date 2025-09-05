@@ -1,0 +1,58 @@
+# 工作流的名称
+name: Website Product Monitor
+
+# 触发工作流的事件
+on:
+  # 允许你从 Actions 标签页手动运行此工作流
+  workflow_dispatch:
+
+  # 设置定时任务，每小时运行一次
+  schedule:
+    - cron: '0 * * * *'
+
+# 定义工作流中的任务
+jobs:
+  run-scripts:
+    # 指定任务运行的虚拟环境
+    runs-on: ubuntu-latest
+
+    # 定义任务中的步骤
+    steps:
+      # 步骤1：检出您的仓库代码，以便工作流可以访问它
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 步骤2：设置Python环境
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10' # 如果需要，您可以选择其他版本
+
+      # 步骤3：从 requirements.txt 文件安装Python依赖
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # 步骤4：安装 Playwright 浏览器 (arcteryx-offical.py 脚本需要)
+      - name: Install Playwright browsers
+        run: python -m playwright install
+
+      # 步骤5：按顺序运行您的Python脚本
+      - name: Run Mammut script
+        run: python Mammut.py
+
+      - name: Run Arc'teryx Sporting Life script
+        run: python arcteryx-sportinglife.py
+      
+      - name: Run Arc'teryx Official script
+        run: python arcteryx-offical.py
+
+      # 步骤6：将更改（JSON和日志文件）提交并推送回仓库
+      - name: Commit and push if there are changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add .
+          git diff --staged --quiet || git commit -m "Automated update of product data"
+          git push
