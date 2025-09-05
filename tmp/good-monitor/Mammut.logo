@@ -1,0 +1,8 @@
+2025-09-05 02:50:40,433 [INFO] 日志系统初始化完成
+2025-09-05 02:50:40,433 [INFO] === 开始一次商品监控 ===
+2025-09-05 02:50:40,433 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2025-09-05 02:50:40,741 [INFO] 获取到 12 个商品标题
+2025-09-05 02:50:40,742 [WARNING] 商品标题文件不存在，返回空列表
+2025-09-05 02:50:40,742 [INFO] 发现新品: ["Taiss Light Mid-Layer Jacket - Men's", "Linard Light Hardshell Hooded Jacket - Men's", "Lenni Shirt - Men's", "Fall Line Hardshell Thermo Hooded Jacket - Men's", "Sertig TR Low Trail Running Shoes - Men's", "Stoney HS Pants - Men's", "Haldigrat Air Hardshell Pants - Men's", "Fall Line Hardshell Thermo Pants - Men's", "Eiger Free Advanced Hardshell Pants - Men's", "La Liste Hardshell Pants - Men's", "La Liste Pro HS Bib Pants - Men's", "Stoney HS Thermo Pants - Men's"]
+2025-09-05 02:50:41,381 [INFO] 推送结果: {"code":200,"msg":"执行成功","data":"90cfc1c1c366429ab38844834bd0b9d9"}
+2025-09-05 02:50:41,382 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json

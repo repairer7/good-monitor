@@ -1,0 +1,8 @@
+2025-09-05 02:50:41,589 [INFO] 日志系统初始化完成
+2025-09-05 02:50:41,590 [INFO] === 开始一次商品监控 ===
+2025-09-05 02:50:41,590 [INFO] 正在请求页面: https://www.sportinglife.ca/en-CA/arcteryx/sale/?prefn1=gender&prefv1=Men%27s
+2025-09-05 02:50:42,163 [INFO] 获取到 13 个商品标题
+2025-09-05 02:50:42,165 [WARNING] 商品标题文件不存在，返回空列表
+2025-09-05 02:50:42,165 [INFO] 发现新品: ["Men's Rho LT Crew Neck Top", "Men's Atom Hoody Jacket", "Men's Cormac Crew Long Sleeve T-Shirt", "Men's Norvan LD 3 GTX Trail Running Shoe", "Men's Sabre Jacket", "Men's Rush Insulated Jacket", "Men's Rush Jacket", "Men's Norvan LD 3 GTX Trail Running Shoe", "Men's Kyanite Pullover Hoody Top", "Men's Aerios Aura Mid Hiking Shoe", "Men's Sabre Insulated Jacket", "Men's Rho Ar Pant", "Men's Rho AR Zip Neck Top"]
+2025-09-05 02:50:42,763 [INFO] 推送结果: {"code":200,"msg":"执行成功","data":"8bb5b7a66386431383e0464218ac2f59"}
+2025-09-05 02:50:42,763 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
