@@ -7,7 +7,7 @@ from playwright.sync_api import sync_playwright
 # ========== 设置日志 ==========
 log_dir = os.path.join(os.getcwd(), "tmp/good-monitor")
 os.makedirs(log_dir, exist_ok=True)
-log_path = os.path.join(log_dir, "arcteryx-offical.logo")
+log_path = os.path.join(log_dir, "ArcTeryx-Offical.logo")
 
 logging.basicConfig(
     level=logging.INFO,
