@@ -1,12 +1,12 @@
 import requests
-import time
 import os
+import json
 import logging
 from playwright.sync_api import sync_playwright
 
 # ========== 设置日志 ==========
-log_dir = os.path.join(os.getcwd(), "tmp/good-monitor")  # 使用绝对路径更安全
-os.makedirs(log_dir, exist_ok=True)         # 如果目录不存在则创建
+log_dir = os.path.join(os.getcwd(), "tmp/good-monitor")
+os.makedirs(log_dir, exist_ok=True)
 log_path = os.path.join(log_dir, "arcteryx-offical.logo")
 
 logging.basicConfig(
@@ -21,11 +21,15 @@ logging.basicConfig(
 log = logging.getLogger()
 log.info("日志系统初始化完成")
 
+# ========== 配置参数 ==========
+KEYWORD = "dxpapi"
+PAGE_URL = "https://outlet.arcteryx.com/ca/zh/c/mens/shell-jackets"
+DATA_FILE = os.path.join(log_dir, "arcteryx_official_titles.json")
+PUSH_TOKEN = "d25f816e481b40aaaa239e0eb551aa1e"  # 替换为你的 PushPlus Token
 
 # ========== 获取页面加载过程中的目标 API URL ==========
 def get_target_url(keyword: str, page_url: str) -> str:
     target = [None]
-
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         context = browser.new_context()
@@ -39,8 +43,7 @@ def get_target_url(keyword: str, page_url: str) -> str:
         page = context.new_page()
         page.goto(page_url, wait_until="domcontentloaded")
         page.wait_for_timeout(5000)
-
-
+        browser.close()
     return target[0]
 
 # ========== 从 API 获取 analytics_name 字段 ==========
@@ -61,58 +64,53 @@ def fetch_analytics_names(url: str):
     log.info(f"获取到 {len(analytics_names)} 个商品标题")
     return analytics_names
 
+# ========== 文件读写 ==========
+def save_titles_to_file(titles):
+    with open(DATA_FILE, "w", encoding="utf-8") as f:
+        json.dump(titles, f, ensure_ascii=False, indent=2)
+    log.info(f"商品标题已保存到文件: {DATA_FILE}")
+
+def load_titles_from_file():
+    if not os.path.exists(DATA_FILE):
+        log.warning("商品标题文件不存在，返回空列表")
+        return []
+    with open(DATA_FILE, "r", encoding="utf-8") as f:
+        titles = json.load(f)
+    log.info(f"从文件加载商品标题，共 {len(titles)} 项")
+    return titles
+
 # ========== 推送通知 ==========
-def send_notice_new(content):
-    token = "d25f816e481b40aaaa239e0eb551aa1e"  # 你的 PushPlus Token
-    title = "官网上新Arc'teryx了"
-    push_url = f"http://www.pushplus.plus/send?token={token}&title={title}&content={content}&template=html"
+def send_notice(content_list, title):
+    if not content_list:
+        return
+    content = "<br>".join(content_list)
+    push_url = f"http://www.pushplus.plus/send?token={PUSH_TOKEN}&title={title}&content={content}&template=html"
     response = requests.get(push_url)
     log.info(f"推送结果: {response.text}")
 
-def send_notice_old(content):
-    token = "d25f816e481b40aaaa239e0eb551aa1e"  # 你的 PushPlus Token
-    title = "官网下架Arc'teryx了"
-    push_url = f"http://www.pushplus.plus/send?token={token}&title={title}&content={content}&template=html"
-    response = requests.get(push_url)
-    log.info(f"推送结果: {response.text}")
-# ========== 循环监控 ==========
-def monitor(keyword: str, page_url: str):
-    log.info("=== 获取初始商品标题（基准） ===")
-    base_url = get_target_url(keyword, page_url)
-    if not base_url:
-        log.warning("未捕获到初始 URL，退出监控")
+# ========== 主监控逻辑 ==========
+def monitor():
+    log.info("=== 开始一次商品监控 ===")
+    target_url = get_target_url(KEYWORD, PAGE_URL)
+    if not target_url:
+        log.warning("未捕获到目标 URL，退出本次监控")
         return
 
-    titles_first = fetch_analytics_names(base_url)
+    current_titles = fetch_analytics_names(target_url)
+    previous_titles = load_titles_from_file()
 
-    while True:
-        log.info("等待 30 分钟后进行检查...")
-        time.sleep(1800)
+    new_items = [t for t in current_titles if t not in previous_titles]
+    old_items = [t for t in previous_titles if t not in current_titles]
 
-        log.info("=== 重新获取 target_url ===")
-        new_url = get_target_url(keyword, page_url)
-        if not new_url:
-            log.warning("未捕获到新的 URL，本轮跳过")
-            continue
+    if new_items:
+        log.info(f"发现新品: {new_items}")
+        send_notice(new_items, "官网上新 Arc'teryx 了")
+    if old_items:
+        log.info(f"下架商品: {old_items}")
+        send_notice(old_items, "官网下架 Arc'teryx 了")
 
-        log.info("=== 检查商品标题 ===")
-        titles_check = fetch_analytics_names(new_url)
-
-        new_items = [t for t in titles_check if t not in titles_first]
-        old_items = [t for t in titles_first if t not in titles_check]
-        if new_items:
-            log.info(f"发现新品: {new_items}")
-            send_notice_new(new_items)
-            titles_first = titles_check
-        elif old_items:
-            log.info(f"下架商品: {old_items}")
-            send_notice_old(old_items)
-            titles_first = titles_check        
-        else:
-            log.info("暂无更新，继续监控...")
+    save_titles_to_file(current_titles)
 
 # ========== 主程序入口 ==========
 if __name__ == "__main__":
-    keyword = "dxpapi"
-    page_url = "https://outlet.arcteryx.com/ca/zh/c/mens/shell-jackets"
-    monitor(keyword, page_url)
+    monitor()
