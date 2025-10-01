@@ -3674,3 +3674,9 @@
 2025-10-01 19:20:07,855 [INFO] 发现新品: ["Innominata Midlayer Jacket - Men's"]
 2025-10-01 19:20:08,546 [INFO] 推送结果: {"code":200,"msg":"执行成功","data":"0ad752548e1249c589af17e385141801"}
 2025-10-01 19:20:08,546 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2025-10-01 20:27:51,931 [INFO] 日志系统初始化完成
+2025-10-01 20:27:51,932 [INFO] === 开始一次商品监控 ===
+2025-10-01 20:27:51,932 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2025-10-01 20:27:53,348 [INFO] 获取到 29 个商品标题
+2025-10-01 20:27:53,349 [INFO] 从文件加载商品标题，共 29 项
+2025-10-01 20:27:53,350 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
