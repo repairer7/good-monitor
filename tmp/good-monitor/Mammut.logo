@@ -4604,3 +4604,11 @@
 2025-10-08 12:55:00,010 [INFO] 下架商品: ["Crag Insulated Hooded Jacket - Men's"]
 2025-10-08 12:55:00,522 [INFO] 推送结果: {"code":200,"msg":"执行成功","data":"190d4fd79fd74e1b91cd333d30e2a101"}
 2025-10-08 12:55:00,522 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2025-10-08 13:35:08,037 [INFO] 日志系统初始化完成
+2025-10-08 13:35:08,038 [INFO] === 开始一次商品监控 ===
+2025-10-08 13:35:08,038 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2025-10-08 13:35:08,311 [INFO] 获取到 30 个商品标题
+2025-10-08 13:35:08,312 [INFO] 从文件加载商品标题，共 29 项
+2025-10-08 13:35:08,312 [INFO] 发现新品: ["Crag Insulated Hooded Jacket - Men's"]
+2025-10-08 13:35:09,200 [INFO] 推送结果: {"code":200,"msg":"执行成功","data":"d8458dc6fc1f4d6c9601a4faf3040059"}
+2025-10-08 13:35:09,201 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
