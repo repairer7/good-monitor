@@ -30,7 +30,7 @@ PUSH_TOKEN = "d25f816e481b40aaaa239e0eb551aa1e"  # 替换为你的 PushPlus Toke
 # ========== 抓取商品标题 ==========
 def fetch_titles():
     log.info(f"正在请求页面: {URL}")
-    resp = requests.get(URL, headers=headers, timeout=15)
+    resp = requests.get(URL, timeout=15)
     resp.raise_for_status()
     soup = BeautifulSoup(resp.text, "html.parser")
     titles = [el.get_text(strip=True) for el in soup.select(CSS_SELECTOR)]
