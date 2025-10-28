@@ -1,13 +1,14 @@
-import requests
-from bs4 import BeautifulSoup
 import os
 import json
 import logging
+from bs4 import BeautifulSoup
+from playwright.sync_api import sync_playwright
+import requests
 
 # ========== 设置日志 ==========
-log_dir = os.path.join(os.getcwd(), "tmp/good-monitor")
+log_dir = os.path.join("/tmp", "good-monitor")  # 改为系统临时目录
 os.makedirs(log_dir, exist_ok=True)
-log_path = os.path.join(log_dir, "ArcTeryx_Sportinglife.logo")
+log_path = os.path.join(log_dir, "ArcTeryx_Sportinglife.log")
 
 logging.basicConfig(
     level=logging.INFO,
@@ -29,10 +30,16 @@ PUSH_TOKEN = "d25f816e481b40aaaa239e0eb551aa1e"  # 替换为你的 PushPlus Toke
 
 # ========== 抓取商品标题 ==========
 def fetch_titles():
-    log.info(f"正在请求页面: {URL}")
-    resp = requests.get(URL, timeout=15)
-    resp.raise_for_status()
-    soup = BeautifulSoup(resp.text, "html.parser")
+    log.info(f"正在用 Playwright 请求页面: {URL}")
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)  # 无头模式
+        page = browser.new_page()
+        page.goto(URL, timeout=30000)
+        page.wait_for_selector(CSS_SELECTOR, timeout=15000)  # 等待商品元素加载
+        html = page.content()
+        browser.close()
+
+    soup = BeautifulSoup(html, "html.parser")
     titles = [el.get_text(strip=True) for el in soup.select(CSS_SELECTOR)]
     log.info(f"获取到 {len(titles)} 个商品标题")
     return titles
