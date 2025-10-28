@@ -32,8 +32,8 @@ jobs:
       - name: Run Mammut script
         run: python Mammut.py
 
-      #- name: Run Arc'teryx Sporting Life script
-        #run: python arcteryx-sportinglife.py
+      - name: Run Arc'teryx Sporting Life script
+        run: python arcteryx-sportinglife.py
       
       - name: Run Arc'teryx Official script
         run: python arcteryx-offical.py
