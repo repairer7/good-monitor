@@ -24,7 +24,7 @@ log.info("日志系统初始化完成")
 
 # ========== 配置参数 ==========
 URL = "https://www.thelasthunt.com/search?query=mammut%20men"
-CSS_SELECTOR = "h3.chakra-text.css-z3x98r"
+CSS_SELECTOR = "h3.css-eiojhb"
 DATA_FILE = os.path.join(log_dir, "mammut_titles.json")
 
 # Bark 的 device_key（替换成你自己的）
