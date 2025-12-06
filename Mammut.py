@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import os
 import json
 import logging
+import urllib.parse
 
 # ========== 设置日志 ==========
 log_dir = os.path.join(os.getcwd(), "tmp/good-monitor")
@@ -25,7 +26,9 @@ log.info("日志系统初始化完成")
 URL = "https://www.thelasthunt.com/search?query=mammut%20men"
 CSS_SELECTOR = "h3.chakra-text.css-z3x98r"
 DATA_FILE = os.path.join(log_dir, "mammut_titles.json")
-PUSH_TOKEN = "d25f816e481b40aaaa239e0eb551aa1e"  # 替换为你的 PushPlus Token
+
+# Bark 的 device_key（替换成你自己的）
+BARK_KEY = "你的Bark密钥"
 
 # ========== 抓取商品标题 ==========
 def fetch_titles():
@@ -52,12 +55,15 @@ def load_titles_from_file():
     log.info(f"从文件加载商品标题，共 {len(titles)} 项")
     return titles
 
-# ========== 推送通知 ==========
+# ========== Bark 推送通知 ==========
 def send_notice(content_list, title):
     if not content_list:
         return
     content = "<br>".join(content_list)
-    url = f"http://www.pushplus.plus/send?token={PUSH_TOKEN}&title={title}&content={content}&template=html"
+    # 对内容和标题进行 URL 编码，避免中文或特殊字符报错
+    content_encoded = urllib.parse.quote(content)
+    title_encoded = urllib.parse.quote(title)
+    url = f"https://bark.imtsui.com/wjZcttgVejaMMHZRGyDmLm/{title_encoded}/{content_encoded}"
     response = requests.get(url)
     log.info(f"推送结果: {response.text}")
 
