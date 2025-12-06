@@ -2,6 +2,7 @@ import requests
 import os
 import json
 import logging
+import urllib.parse
 from playwright.sync_api import sync_playwright
 
 # ========== 设置日志 ==========
@@ -25,7 +26,6 @@ log.info("日志系统初始化完成")
 KEYWORD = "dxpapi"
 PAGE_URL = "https://outlet.arcteryx.com/ca/zh/c/mens/shell-jackets"
 DATA_FILE = os.path.join(log_dir, "arcteryx_official_titles.json")
-PUSH_TOKEN = "d25f816e481b40aaaa239e0eb551aa1e"  # 替换为你的 PushPlus Token
 
 # ========== 获取页面加载过程中的目标 API URL ==========
 def get_target_url(keyword: str, page_url: str) -> str:
@@ -79,13 +79,16 @@ def load_titles_from_file():
     log.info(f"从文件加载商品标题，共 {len(titles)} 项")
     return titles
 
-# ========== 推送通知 ==========
+# ========== Bark 推送通知 ==========
 def send_notice(content_list, title):
     if not content_list:
         return
     content = "<br>".join(content_list)
-    push_url = f"http://www.pushplus.plus/send?token={PUSH_TOKEN}&title={title}&content={content}&template=html"
-    response = requests.get(push_url)
+    # 对内容和标题进行 URL 编码，避免中文或特殊字符报错
+    content_encoded = urllib.parse.quote(content)
+    title_encoded = urllib.parse.quote(title)
+    bark_url = f"https://bark.imtsui.com/wjZcttgVejaMMHZRGyDmLm/{title_encoded}/{content_encoded}"
+    response = requests.get(bark_url)
     log.info(f"推送结果: {response.text}")
 
 # ========== 主监控逻辑 ==========
