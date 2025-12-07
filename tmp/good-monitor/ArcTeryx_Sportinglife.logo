@@ -7214,3 +7214,11 @@
 2025-10-27 17:24:02,644 [INFO] 获取到 7 个商品标题
 2025-10-27 17:24:02,645 [INFO] 从文件加载商品标题，共 7 项
 2025-10-27 17:24:02,645 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
+2025-12-07 14:08:20,757 [INFO] 日志系统初始化完成
+2025-12-07 14:08:20,758 [INFO] === 开始一次商品监控 ===
+2025-12-07 14:08:20,758 [INFO] 正在请求页面: https://www.sportinglife.ca/en-CA/arcteryx/sale/?prefn1=gender&prefv1=Men%27s
+2025-12-07 14:08:21,185 [INFO] 获取到 3 个商品标题
+2025-12-07 14:08:21,187 [INFO] 从文件加载商品标题，共 7 项
+2025-12-07 14:08:21,188 [INFO] 下架商品: ["Men's Rho LT Crew Neck Top", "Men's Rush Insulated Jacket", "Men's Rush Jacket", "Men's Rho Ar Pant"]
+2025-12-07 14:08:21,984 [INFO] 推送结果: {"code":200,"msg":"执行成功","data":"bed376b5152a4d81b0363c7ccd9ad6d3"}
+2025-12-07 14:08:21,984 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
