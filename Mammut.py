@@ -63,7 +63,7 @@ def send_notice(content_list, title):
     # 对内容和标题进行 URL 编码，避免中文或特殊字符报错
     content_encoded = urllib.parse.quote(content)
     title_encoded = urllib.parse.quote(title)
-    url = f"https://bark.imtsui.com/wjZcttgVejaMMHZRGyDmLm/{title_encoded}/{content_encoded}?group=商品监控"
+    url = f"https://bark.imtsui.com/wjZcttgVejaMMHZRGyDmLm/{title_encoded}/{content_encoded}?group=Product monitor"
     response = requests.get(url)
     log.info(f"推送结果: {response.text}")
 
