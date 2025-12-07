@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import os
 import json
 import logging
+import urllib.parse
 
 # ========== 设置日志 ==========
 log_dir = os.path.join(os.getcwd(), "tmp/good-monitor")
@@ -25,7 +26,7 @@ log.info("日志系统初始化完成")
 URL = "https://www.sportinglife.ca/en-CA/arcteryx/sale/?prefn1=gender&prefv1=Men%27s"
 CSS_SELECTOR = "span.product-name"
 DATA_FILE = os.path.join(log_dir, "arcteryx_sportinglife_titles.json")
-PUSH_TOKEN = "d25f816e481b40aaaa239e0eb551aa1e"  # 替换为你的 PushPlus Token
+
 
 # ========== 抓取商品标题 ==========
 def fetch_titles():
@@ -52,13 +53,16 @@ def load_titles_from_file():
     log.info(f"从文件加载商品标题，共 {len(titles)} 项")
     return titles
 
-# ========== 推送通知 ==========
+# ========== Bark 推送通知 ==========
 def send_notice(content_list, title):
     if not content_list:
         return
     content = "<br>".join(content_list)
-    url = f"http://www.pushplus.plus/send?token={PUSH_TOKEN}&title={title}&content={content}&template=html"
-    response = requests.get(url)
+    # 对内容和标题进行 URL 编码，避免中文或特殊字符报错
+    content_encoded = urllib.parse.quote(content)
+    title_encoded = urllib.parse.quote(title)
+    bark_url = f"https://bark.imtsui.com/wjZcttgVejaMMHZRGyDmLm/{title_encoded}/{content_encoded}"
+    response = requests.get(bark_url)
     log.info(f"推送结果: {response.text}")
 
 # ========== 主监控逻辑 ==========
