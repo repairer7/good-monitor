@@ -57,7 +57,7 @@ def load_titles_from_file():
 def send_notice(content_list, title):
     if not content_list:
         return
-    content = "<br>".join(content_list)
+    content = "\n".join(content_list)
     # 对内容和标题进行 URL 编码，避免中文或特殊字符报错
     content_encoded = urllib.parse.quote(content)
     title_encoded = urllib.parse.quote(title)
