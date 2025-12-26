@@ -15158,3 +15158,9 @@
 2025-12-26 11:26:05,842 [INFO] 获取到 10 个商品标题
 2025-12-26 11:26:05,843 [INFO] 从文件加载商品标题，共 10 项
 2025-12-26 11:26:05,844 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2025-12-26 12:58:32,436 [INFO] 日志系统初始化完成
+2025-12-26 12:58:32,437 [INFO] === 开始一次商品监控 ===
+2025-12-26 12:58:32,437 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2025-12-26 12:58:32,681 [INFO] 获取到 10 个商品标题
+2025-12-26 12:58:32,682 [INFO] 从文件加载商品标题，共 10 项
+2025-12-26 12:58:32,682 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
