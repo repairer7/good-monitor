@@ -10392,3 +10392,11 @@
 2025-12-30 23:26:54,244 [INFO] 发现新品: ["Men's Beta SL Jacket"]
 2025-12-30 23:26:55,126 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1767137215}
 2025-12-30 23:26:55,127 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
+2025-12-31 02:21:36,605 [INFO] 日志系统初始化完成
+2025-12-31 02:21:36,605 [INFO] === 开始一次商品监控 ===
+2025-12-31 02:21:36,606 [INFO] 正在请求页面: https://www.sportinglife.ca/en-CA/arcteryx/sale/?prefn1=gender&prefv1=Men%27s
+2025-12-31 02:21:37,357 [INFO] 获取到 4 个商品标题
+2025-12-31 02:21:37,360 [INFO] 从文件加载商品标题，共 5 项
+2025-12-31 02:21:37,360 [INFO] 下架商品: ["Men's Beta SL Jacket"]
+2025-12-31 02:21:38,673 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1767147698}
+2025-12-31 02:21:38,674 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
