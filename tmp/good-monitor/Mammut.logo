@@ -16364,3 +16364,11 @@
 2026-01-04 15:27:28,987 [INFO] 下架商品: ["Broad Peak Insulated Hooded Jacket - Men's"]
 2026-01-04 15:27:29,903 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1767540449}
 2026-01-04 15:27:29,905 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-01-04 16:34:00,418 [INFO] 日志系统初始化完成
+2026-01-04 16:34:00,419 [INFO] === 开始一次商品监控 ===
+2026-01-04 16:34:00,419 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-01-04 16:34:00,730 [INFO] 获取到 14 个商品标题
+2026-01-04 16:34:00,732 [INFO] 从文件加载商品标题，共 13 项
+2026-01-04 16:34:00,732 [INFO] 发现新品: ["Broad Peak Insulated Hooded Jacket - Men's"]
+2026-01-04 16:34:01,477 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1767544441}
+2026-01-04 16:34:01,479 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
