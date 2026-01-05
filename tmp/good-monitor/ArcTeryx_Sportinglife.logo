@@ -11100,3 +11100,11 @@
 2026-01-05 07:36:45,399 [INFO] 获取到 7 个商品标题
 2026-01-05 07:36:45,400 [INFO] 从文件加载商品标题，共 7 项
 2026-01-05 07:36:45,400 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
+2026-01-05 08:46:05,018 [INFO] 日志系统初始化完成
+2026-01-05 08:46:05,018 [INFO] === 开始一次商品监控 ===
+2026-01-05 08:46:05,018 [INFO] 正在请求页面: https://www.sportinglife.ca/en-CA/arcteryx/sale/?prefn1=gender&prefv1=Men%27s
+2026-01-05 08:46:06,009 [INFO] 获取到 21 个商品标题
+2026-01-05 08:46:06,010 [INFO] 从文件加载商品标题，共 7 项
+2026-01-05 08:46:06,010 [INFO] 发现新品: ["Men's Covert 1/2-Zip Top", "Men's Thorium Hoody Jacket", "Men's Delta 1/2-Zip Top", "Men's Cormac Crew Neck Long Sleeve T-Shirt", "Men's Delta Pullover Hoody Jacket", "Men's Covert Cardigan Jacket", "Men's Delta Jacket", "Men's Solano Hoody Jacket", "Men's Cormac Hoody Top", "Men's Kyanite Hoody Jacket", "Men's Cormac Crew Neck Long Sleeve T-Shirt", "Men's Cormac Crew Neck Short Sleeve T-Shirt", "Men's Cormac Crew Neck Short Sleeve T-Shirt", "Men's Atom Hoody Jacket"]
+2026-01-05 08:46:06,578 [INFO] 推送结果: {"code":404,"message":"Cannot GET /wjZcttgVejaMMHZRGyDmLm/SportingLife%20%E4%B8%8A%E6%96%B0%20Arc%27teryx%20%E4%BA%86/Men%27s%20Covert%201/2-Zip%20Top%0AMen%27s%20Thorium%20Hoody%20Jacket%0AMen%27s%20Delta%201/2-Zip%20Top%0AMen%27s%20Cormac%20Crew%20Neck%20Long%20Sleeve%20T-Shirt%0AMen%27s%20Delta%20Pullover%20Hoody%20Jacket%0AMen%27s%20Covert%20Cardigan%20Jacket%0AMen%27s%20Delta%20Jacket%0AMen%27s%20Solano%20Hoody%20Jacket%0AMen%27s%20Cormac%20Hoody%20Top%0AMen%27s%20Kyanite%20Hoody%20Jacket%0AMen%27s%20Cormac%20Crew%20Neck%20Long%20Sleeve%20T-Shirt%0AMen%27s%20Cormac%20Crew%20Neck%20Short%20Sleeve%20T-Shirt%0AMen%27s%20Cormac%20Crew%20Neck%20Short%20Sleeve%20T-Shirt%0AMen%27s%20Atom%20Hoody%20Jacket","timestamp":1767602766}
+2026-01-05 08:46:06,579 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
