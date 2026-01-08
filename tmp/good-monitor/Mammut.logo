@@ -16814,3 +16814,11 @@
 2026-01-07 23:29:17,683 [INFO] 发现新品: ['Logo Polo Shirt - Men’s']
 2026-01-07 23:29:18,576 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1767828558}
 2026-01-07 23:29:18,578 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-01-08 02:23:22,705 [INFO] 日志系统初始化完成
+2026-01-08 02:23:22,705 [INFO] === 开始一次商品监控 ===
+2026-01-08 02:23:22,705 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-01-08 02:23:23,020 [INFO] 获取到 28 个商品标题
+2026-01-08 02:23:23,021 [INFO] 从文件加载商品标题，共 29 项
+2026-01-08 02:23:23,021 [INFO] 下架商品: ['Logo Polo Shirt - Men’s']
+2026-01-08 02:23:24,460 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1767839004}
+2026-01-08 02:23:24,461 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
