@@ -17298,3 +17298,11 @@
 2026-01-11 15:28:18,885 [INFO] 获取到 27 个商品标题
 2026-01-11 15:28:18,887 [INFO] 从文件加载商品标题，共 27 项
 2026-01-11 15:28:18,887 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-01-11 16:34:45,469 [INFO] 日志系统初始化完成
+2026-01-11 16:34:45,469 [INFO] === 开始一次商品监控 ===
+2026-01-11 16:34:45,469 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-01-11 16:34:46,483 [INFO] 获取到 26 个商品标题
+2026-01-11 16:34:46,485 [INFO] 从文件加载商品标题，共 27 项
+2026-01-11 16:34:46,485 [INFO] 下架商品: ["Fleece Cap - Men's"]
+2026-01-11 16:34:47,880 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1768149287}
+2026-01-11 16:34:47,881 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
