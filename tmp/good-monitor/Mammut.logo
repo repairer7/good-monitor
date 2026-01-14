@@ -17644,3 +17644,13 @@
 2026-01-14 08:41:26,834 [INFO] 获取到 25 个商品标题
 2026-01-14 08:41:26,836 [INFO] 从文件加载商品标题，共 25 项
 2026-01-14 08:41:26,836 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-01-14 09:37:41,343 [INFO] 日志系统初始化完成
+2026-01-14 09:37:41,343 [INFO] === 开始一次商品监控 ===
+2026-01-14 09:37:41,343 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-01-14 09:37:42,876 [INFO] 获取到 26 个商品标题
+2026-01-14 09:37:42,877 [INFO] 从文件加载商品标题，共 25 项
+2026-01-14 09:37:42,877 [INFO] 发现新品: ["Fleece Cap - Men's", "Eiger Nordwand Light Down Insulated Shorts - Men's"]
+2026-01-14 09:37:44,309 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1768383464}
+2026-01-14 09:37:44,310 [INFO] 下架商品: ["Massone Pants - Men's"]
+2026-01-14 09:37:45,200 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1768383465}
+2026-01-14 09:37:45,202 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
