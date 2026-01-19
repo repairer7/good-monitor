@@ -18300,3 +18300,11 @@
 2026-01-19 07:37:20,088 [INFO] 获取到 34 个商品标题
 2026-01-19 07:37:20,090 [INFO] 从文件加载商品标题，共 34 项
 2026-01-19 07:37:20,090 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-01-19 08:45:35,809 [INFO] 日志系统初始化完成
+2026-01-19 08:45:35,809 [INFO] === 开始一次商品监控 ===
+2026-01-19 08:45:35,810 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-01-19 08:45:37,169 [INFO] 获取到 31 个商品标题
+2026-01-19 08:45:37,170 [INFO] 从文件加载商品标题，共 34 项
+2026-01-19 08:45:37,170 [INFO] 下架商品: ['Massone T-Shirt Barryvox - Unisex', "Aconcagua Light Midlayer Jacket - Men's", "Aconcagua Light Midlayer Hoodie - Men's"]
+2026-01-19 08:45:38,467 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1768812338}
+2026-01-19 08:45:38,468 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
