@@ -18456,3 +18456,9 @@
 2026-01-20 10:39:03,009 [INFO] 下架商品: ["Taiss Insulated Hooded Jacket - Men's"]
 2026-01-20 10:39:03,937 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1768905543}
 2026-01-20 10:39:03,938 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-01-20 11:31:19,755 [INFO] 日志系统初始化完成
+2026-01-20 11:31:19,756 [INFO] === 开始一次商品监控 ===
+2026-01-20 11:31:19,756 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-01-20 11:31:19,971 [INFO] 获取到 30 个商品标题
+2026-01-20 11:31:19,973 [INFO] 从文件加载商品标题，共 30 项
+2026-01-20 11:31:19,973 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
