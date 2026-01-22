@@ -18700,3 +18700,11 @@
 2026-01-22 09:41:09,338 [INFO] 获取到 29 个商品标题
 2026-01-22 09:41:09,340 [INFO] 从文件加载商品标题，共 29 项
 2026-01-22 09:41:09,340 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-01-22 10:38:37,502 [INFO] 日志系统初始化完成
+2026-01-22 10:38:37,502 [INFO] === 开始一次商品监控 ===
+2026-01-22 10:38:37,502 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-01-22 10:38:37,952 [INFO] 获取到 31 个商品标题
+2026-01-22 10:38:37,954 [INFO] 从文件加载商品标题，共 29 项
+2026-01-22 10:38:37,954 [INFO] 发现新品: ["Aconcagua Light Midlayer Jacket - Men's", "Albula Insulated Hooded Jacket - Men's"]
+2026-01-22 10:38:38,783 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1769078318}
+2026-01-22 10:38:38,785 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
