@@ -18836,3 +18836,11 @@
 2026-01-23 11:29:12,728 [INFO] 下架商品: ["Crater Pro Hardshell Hooded Jacket - Men's"]
 2026-01-23 11:29:14,439 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1769167754}
 2026-01-23 11:29:14,440 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-01-23 13:05:34,497 [INFO] 日志系统初始化完成
+2026-01-23 13:05:34,497 [INFO] === 开始一次商品监控 ===
+2026-01-23 13:05:34,497 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-01-23 13:05:34,833 [INFO] 获取到 31 个商品标题
+2026-01-23 13:05:34,834 [INFO] 从文件加载商品标题，共 30 项
+2026-01-23 13:05:34,835 [INFO] 发现新品: ["Crater Pro Hardshell Hooded Jacket - Men's"]
+2026-01-23 13:05:36,039 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1769173535}
+2026-01-23 13:05:36,040 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
