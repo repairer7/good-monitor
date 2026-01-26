@@ -19145,3 +19145,9 @@
 2026-01-26 06:42:06,127 [WARNING] Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(104, 'Connection reset by peer')': /wjZcttgVejaMMHZRGyDmLm/TheLastHunt%20%E4%B8%8A%E6%96%B0%20Mammut%20%E4%BA%86/Ducan%20Guide%20Hardshell%20Hooded%20Jacket%20-%20Men%27s%0ASapuen%20High%20GTX%20Hiking%20Shoes%20-%20Men%27s%0AStoney%20Hardshell%20Hooded%20Jacket%20-%20Men%27s%0ACore%20Midlayer%20Crew%20Neck%20Sweater%20-%20Men%27s%0AAlbula%20Insulated%20Hooded%20Jacket%20-%20Men%27s%0AStoney%20Hardshell%20Pants%20-%20Men%27s%0AOphir%203%20Slide%20Harness%20-%20Men%27s%0ABlackfin%20III%20Mid%20DT%20Hiking%20Boots%20-%20Men%27s%0ASaentis%20TR%20Low%20GTX%20Trail%20Running%20Shoes%20-%20Men%27s?group=Product%20monitor
 2026-01-26 06:42:07,019 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1769409726}
 2026-01-26 06:42:07,019 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-01-26 06:51:54,292 [INFO] 日志系统初始化完成
+2026-01-26 06:51:54,293 [INFO] === 开始一次商品监控 ===
+2026-01-26 06:51:54,293 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-01-26 06:51:54,790 [INFO] 获取到 27 个商品标题
+2026-01-26 06:51:54,792 [INFO] 从文件加载商品标题，共 27 项
+2026-01-26 06:51:54,792 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
