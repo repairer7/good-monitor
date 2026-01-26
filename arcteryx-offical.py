@@ -4,6 +4,8 @@ import json
 import logging
 import urllib.parse
 from playwright.sync_api import sync_playwright
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 # ========== 设置日志 ==========
 log_dir = os.path.join(os.getcwd(), "tmp/good-monitor")
