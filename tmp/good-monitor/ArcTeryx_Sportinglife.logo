@@ -13825,3 +13825,11 @@
 2026-01-26 13:06:50,571 [INFO] 获取到 32 个商品标题
 2026-01-26 13:06:50,572 [INFO] 从文件加载商品标题，共 32 项
 2026-01-26 13:06:50,573 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
+2026-01-26 13:52:03,015 [INFO] 日志系统初始化完成
+2026-01-26 13:52:03,015 [INFO] === 开始一次商品监控 ===
+2026-01-26 13:52:03,015 [INFO] 正在请求页面: https://www.sportinglife.ca/en-CA/arcteryx/sale/?prefn1=gender&prefv1=Men%27s
+2026-01-26 13:52:04,248 [INFO] 获取到 34 个商品标题
+2026-01-26 13:52:04,249 [INFO] 从文件加载商品标题，共 32 项
+2026-01-26 13:52:04,249 [INFO] 发现新品: ['Unisex Word Toque', "Men's Aerios Aura Mid Hiking Shoe"]
+2026-01-26 13:52:05,846 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1769435525}
+2026-01-26 13:52:05,848 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
