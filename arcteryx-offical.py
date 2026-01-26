@@ -139,8 +139,22 @@ def monitor():
     current_titles = fetch_analytics_names(target_url)
     previous_titles = load_titles_from_file()
 
-    new_items = [t for t in current_titles if t not in previous_titles]
-    old_items = [t for t in previous_titles if t not in current_titles]
+    curr = Counter(current_titles)
+    prev = Counter(previous_titles)
+
+    # 新增商品（计数增加）
+    new_items = []
+    for item in curr:
+        if curr[item] > prev[item]:
+            diff = curr[item] - prev[item]
+            new_items.extend([item] * diff)
+
+    # 下架商品（计数减少）
+    old_items = []
+    for item in prev:
+        if prev[item] > curr[item]:
+            diff = prev[item] - curr[item]
+            old_items.extend([item] * diff)
 
     if new_items:
         log.info(f"发现新品: {new_items}")
