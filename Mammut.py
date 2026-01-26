@@ -1,8 +1,9 @@
 import requests
-from bs4 import BeautifulSoup
 import os
+from bs4 import BeautifulSoup
 import json
 import logging
+import urllib.parse
 
 # ========== 设置日志 ==========
 log_dir = os.path.join(os.getcwd(), "tmp/good-monitor")
@@ -25,9 +26,6 @@ log.info("日志系统初始化完成")
 URL = "https://www.thelasthunt.com/search?query=mammut%20men"
 CSS_SELECTOR = "h3.css-eiojhb"
 DATA_FILE = os.path.join(log_dir, "mammut_titles.json")
-
-# Bark 的 device_key（替换成你自己的）
-BARK_KEY = "你的Bark密钥"
 
 # ========== 抓取商品标题 ==========
 def fetch_titles():
@@ -58,23 +56,13 @@ def load_titles_from_file():
 def send_notice(content_list, title):
     if not content_list:
         return
-
     content = "\n".join(content_list)
-
-    url = "https://bark.imtsui.com/push"
-    payload = {
-        "title": title,
-        "body": content,
-        "device_key": BwjZcttgVejaMMHZRGyDmLm,
-        "group": "Product monitor"
-    }
-
-    try:
-        response = requests.post(url, json=payload, timeout=10)
-        response.raise_for_status()
-        log.info(f"推送成功: {response.text}")
-    except requests.exceptions.RequestException as e:
-        log.error(f"推送失败: {e}")
+    # 对内容和标题进行 URL 编码，避免中文或特殊字符报错
+    content_encoded = urllib.parse.quote(content)
+    title_encoded = urllib.parse.quote(title)
+    url = f"https://bark.imtsui.com/wjZcttgVejaMMHZRGyDmLm/{title_encoded}/{content_encoded}?group=Product monitor"
+    response = requests.get(url)
+    log.info(f"推送结果: {response.text}")
 
 # ========== 主监控逻辑 ==========
 def monitor():
