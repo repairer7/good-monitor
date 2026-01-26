@@ -83,13 +83,48 @@ def load_titles_from_file():
 def send_notice(content_list, title):
     if not content_list:
         return
+        
     content = "\n".join(content_list)
-    # 对内容和标题进行 URL 编码，避免中文或特殊字符报错
+    # 对内容和标题进行 URL 编码
     content_encoded = urllib.parse.quote(content)
     title_encoded = urllib.parse.quote(title)
-    bark_url = f"https://bark.imtsui.com/wjZcttgVejaMMHZRGyDmLm/{title_encoded}/{content_encoded}?group=Product monitor"
-    response = requests.get(bark_url)
-    log.info(f"推送结果: {response.text}")
+    
+    # 构造 URL
+    url = f"https://bark.imtsui.com/wjZcttgVejaMMHZRGyDmLm/{title_encoded}/{content_encoded}?group=Product monitor"
+    
+    # === 关键修改 1: 设置 Session 和 重试策略 ===
+    # 建立一个 Session 对象，比直接用 requests.get 更稳定
+    session = requests.Session()
+    
+    # 设置重试机制：
+    # total=3: 最多重试3次
+    # backoff_factor=1: 每次重试间隔时间增加 (0s, 2s, 4s...)
+    # status_forcelist: 遇到这些状态码也重试
+    retries = Retry(total=3, backoff_factor=1, status_forcelist=[500, 502, 503, 504])
+    
+    # 将重试策略挂载到 https 和 http 协议上
+    session.mount('https://', HTTPAdapter(max_retries=retries))
+    session.mount('http://', HTTPAdapter(max_retries=retries))
+    
+    # === 关键修改 2: 伪装 User-Agent ===
+    # 很多服务器会拦截默认的 "python-requests/x.x.x" 标识
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    }
+
+    try:
+        # === 关键修改 3: 增加 timeout ===
+        # timeout=10 表示如果 10 秒内服务器没响应就报错（配合重试机制使用）
+        response = session.get(url, headers=headers, timeout=10)
+        
+        # 检查响应状态码，如果是 4xx 或 5xx 会抛出异常
+        response.raise_for_status() 
+        
+        log.info(f"推送结果: {response.text}")
+        
+    except requests.exceptions.RequestException as e:
+        # 捕获所有请求相关的异常（连接错误、超时、DNS错误等）
+        log.error(f"推送失败，已达到最大重试次数。错误信息: {e}")
 
 # ========== 主监控逻辑 ==========
 def monitor():
