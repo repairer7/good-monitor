@@ -3,7 +3,6 @@ from bs4 import BeautifulSoup
 import os
 import json
 import logging
-import urllib.parse
 
 # ========== 设置日志 ==========
 log_dir = os.path.join(os.getcwd(), "tmp/good-monitor")
@@ -59,13 +58,23 @@ def load_titles_from_file():
 def send_notice(content_list, title):
     if not content_list:
         return
+
     content = "\n".join(content_list)
-    # 对内容和标题进行 URL 编码，避免中文或特殊字符报错
-    content_encoded = urllib.parse.quote(content)
-    title_encoded = urllib.parse.quote(title)
-    url = f"https://bark.imtsui.com/wjZcttgVejaMMHZRGyDmLm/{title_encoded}/{content_encoded}?group=Product monitor"
-    response = requests.get(url)
-    log.info(f"推送结果: {response.text}")
+
+    url = "https://bark.imtsui.com/push"
+    payload = {
+        "title": title,
+        "body": content,
+        "device_key": BwjZcttgVejaMMHZRGyDmLm,
+        "group": "Product monitor"
+    }
+
+    try:
+        response = requests.post(url, json=payload, timeout=10)
+        response.raise_for_status()
+        log.info(f"推送成功: {response.text}")
+    except requests.exceptions.RequestException as e:
+        log.error(f"推送失败: {e}")
 
 # ========== 主监控逻辑 ==========
 def monitor():
