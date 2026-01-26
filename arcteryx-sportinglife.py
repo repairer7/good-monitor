@@ -67,7 +67,10 @@ def send_notice(content_list, title):
     title_encoded = urllib.parse.quote(title)
     
     # 构造 URL
-    url = f"https://bark.imtsui.com/wjZcttgVejaMMHZRGyDmLm/{title_encoded}/{content_encoded}?group=Product monitor"
+    url = (
+    "https://bark.imtsui.com/wjZcttgVejaMMHZRGyDmLm/"
+    f"{title_encoded}?body={content_encoded}&group=Product monitor"
+    )
     
     # === 关键修改 1: 设置 Session 和 重试策略 ===
     # 建立一个 Session 对象，比直接用 requests.get 更稳定
