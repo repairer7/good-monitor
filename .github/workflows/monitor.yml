@@ -29,8 +29,8 @@ jobs:
       - name: Install Playwright browsers
         run: python -m playwright install
 
-      #- name: Run Mammut script
-        #run: python Mammut.py
+      - name: Run Mammut script
+        run: python Mammut.py
 
       - name: Run Arc'teryx Sporting Life script
         run: python arcteryx-sportinglife.py
