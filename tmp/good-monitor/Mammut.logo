@@ -19253,3 +19253,13 @@
 2026-01-26 21:32:51,469 [INFO] 获取到 27 个商品标题
 2026-01-26 21:32:51,471 [INFO] 从文件加载商品标题，共 27 项
 2026-01-26 21:32:51,471 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-01-26 22:32:16,612 [INFO] 日志系统初始化完成
+2026-01-26 22:32:16,612 [INFO] === 开始一次商品监控 ===
+2026-01-26 22:32:16,612 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-01-26 22:32:16,844 [INFO] 获取到 28 个商品标题
+2026-01-26 22:32:16,846 [INFO] 从文件加载商品标题，共 27 项
+2026-01-26 22:32:16,846 [INFO] 发现新品: ['All-Mountain Targeted Cushion Merino Crew Socks - Unisex']
+2026-01-26 22:32:26,886 [WARNING] Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPSConnection(host='bark.imtsui.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable")': /wjZcttgVejaMMHZRGyDmLm/TheLastHunt%20%E4%B8%8A%E6%96%B0%20Mammut%20%E4%BA%86/All-Mountain%20Targeted%20Cushion%20Merino%20Crew%20Socks%20-%20Unisex?group=Product%20monitor
+2026-01-26 22:32:29,292 [WARNING] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(104, 'Connection reset by peer')': /wjZcttgVejaMMHZRGyDmLm/TheLastHunt%20%E4%B8%8A%E6%96%B0%20Mammut%20%E4%BA%86/All-Mountain%20Targeted%20Cushion%20Merino%20Crew%20Socks%20-%20Unisex?group=Product%20monitor
+2026-01-26 22:32:30,239 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1769466750}
+2026-01-26 22:32:30,239 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
