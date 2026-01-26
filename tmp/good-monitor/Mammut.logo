@@ -19104,3 +19104,15 @@
 2026-01-25 11:25:31,267 [INFO] 获取到 28 个商品标题
 2026-01-25 11:25:31,269 [INFO] 从文件加载商品标题，共 28 项
 2026-01-25 11:25:31,269 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-01-26 06:24:09,414 [INFO] 日志系统初始化完成
+2026-01-26 06:24:09,414 [INFO] === 开始一次商品监控 ===
+2026-01-26 06:24:09,414 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-01-26 06:24:10,388 [INFO] 获取到 27 个商品标题
+2026-01-26 06:24:10,389 [INFO] 从文件加载商品标题，共 26 项
+2026-01-26 06:24:10,390 [INFO] 发现新品: ["Albula Insulated Hooded Jacket - Men's", "Stoney Hardshell Pants - Men's"]
+2026-01-26 06:24:11,119 [WARNING] Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(104, 'Connection reset by peer')': /wjZcttgVejaMMHZRGyDmLm/TheLastHunt%20%E4%B8%8A%E6%96%B0%20Mammut%20%E4%BA%86/Albula%20Insulated%20Hooded%20Jacket%20-%20Men%27s%0AStoney%20Hardshell%20Pants%20-%20Men%27s?group=Product%20monitor
+2026-01-26 06:24:13,313 [WARNING] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(104, 'Connection reset by peer')': /wjZcttgVejaMMHZRGyDmLm/TheLastHunt%20%E4%B8%8A%E6%96%B0%20Mammut%20%E4%BA%86/Albula%20Insulated%20Hooded%20Jacket%20-%20Men%27s%0AStoney%20Hardshell%20Pants%20-%20Men%27s?group=Product%20monitor
+2026-01-26 06:24:14,233 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1769408654}
+2026-01-26 06:24:14,233 [INFO] 下架商品: ["Aconcagua Light Midlayer Jacket - Men's"]
+2026-01-26 06:24:15,124 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1769408655}
+2026-01-26 06:24:15,125 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
