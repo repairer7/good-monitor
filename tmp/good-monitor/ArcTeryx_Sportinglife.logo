@@ -13908,3 +13908,12 @@
 2026-01-27 02:31:15,599 [INFO] 获取到 33 个商品标题
 2026-01-27 02:31:15,601 [INFO] 从文件加载商品标题，共 33 项
 2026-01-27 02:31:15,601 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
+2026-01-27 04:13:00,707 [INFO] 日志系统初始化完成
+2026-01-27 04:13:00,707 [INFO] === 开始一次商品监控 ===
+2026-01-27 04:13:00,707 [INFO] 正在请求页面: https://www.sportinglife.ca/en-CA/arcteryx/sale/?prefn1=gender&prefv1=Men%27s
+2026-01-27 04:13:01,648 [INFO] 获取到 32 个商品标题
+2026-01-27 04:13:01,650 [INFO] 从文件加载商品标题，共 33 项
+2026-01-27 04:13:01,650 [INFO] 下架商品: ['Unisex Word Toque']
+2026-01-27 04:13:02,127 [WARNING] Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(104, 'Connection reset by peer')': /wjZcttgVejaMMHZRGyDmLm/SportingLife%20%E4%B8%8B%E6%9E%B6%20Arc%27teryx%20%E4%BA%86/Unisex%20Word%20Toque?group=Product%20monitor
+2026-01-27 04:13:03,330 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1769487183}
+2026-01-27 04:13:03,331 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
