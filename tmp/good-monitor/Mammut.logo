@@ -19395,3 +19395,12 @@
 2026-01-27 21:27:11,461 [INFO] 获取到 26 个商品标题
 2026-01-27 21:27:11,463 [INFO] 从文件加载商品标题，共 26 项
 2026-01-27 21:27:11,463 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-01-27 22:31:24,928 [INFO] 日志系统初始化完成
+2026-01-27 22:31:24,928 [INFO] === 开始一次商品监控 ===
+2026-01-27 22:31:24,928 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-01-27 22:31:25,309 [INFO] 获取到 25 个商品标题
+2026-01-27 22:31:25,310 [INFO] 从文件加载商品标题，共 26 项
+2026-01-27 22:31:25,310 [INFO] 下架商品: ["Eiger Speed HS Hooded Jacket - Men's"]
+2026-01-27 22:31:25,770 [WARNING] Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(104, 'Connection reset by peer')': /wjZcttgVejaMMHZRGyDmLm/TheLastHunt%20%E4%B8%8B%E6%9E%B6%20Mammut%20%E4%BA%86/Eiger%20Speed%20HS%20Hooded%20Jacket%20-%20Men%27s?group=Product%20monitor
+2026-01-27 22:31:26,703 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1769553086}
+2026-01-27 22:31:26,703 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
