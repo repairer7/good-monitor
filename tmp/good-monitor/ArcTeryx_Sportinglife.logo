@@ -14173,3 +14173,14 @@
 2026-01-28 18:49:26,801 [INFO] 获取到 36 个商品标题
 2026-01-28 18:49:26,803 [INFO] 从文件加载商品标题，共 36 项
 2026-01-28 18:49:26,803 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
+2026-01-28 19:37:41,322 [INFO] 日志系统初始化完成
+2026-01-28 19:37:41,322 [INFO] === 开始一次商品监控 ===
+2026-01-28 19:37:41,322 [INFO] 正在请求页面: https://www.sportinglife.ca/en-CA/arcteryx/sale/?prefn1=gender&prefv1=Men%27s
+2026-01-28 19:37:42,585 [INFO] 获取到 36 个商品标题
+2026-01-28 19:37:42,587 [INFO] 从文件加载商品标题，共 36 项
+2026-01-28 19:37:42,587 [INFO] 发现新品: ["Men's Kragg Cotton Logo Short Sleeve T-Shirt"]
+2026-01-28 19:37:43,085 [WARNING] Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(104, 'Connection reset by peer')': /wjZcttgVejaMMHZRGyDmLm/SportingLife%20%E4%B8%8A%E6%96%B0%20Arc%27teryx%20%E4%BA%86/Men%27s%20Kragg%20Cotton%20Logo%20Short%20Sleeve%20T-Shirt?group=Product%20monitor
+2026-01-28 19:37:44,086 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1769629063}
+2026-01-28 19:37:44,086 [INFO] 下架商品: ["Men's Cerium Vest"]
+2026-01-28 19:37:45,005 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1769629064}
+2026-01-28 19:37:45,006 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
