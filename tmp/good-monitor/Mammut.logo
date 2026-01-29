@@ -19599,3 +19599,11 @@
 2026-01-29 14:49:16,862 [INFO] 获取到 26 个商品标题
 2026-01-29 14:49:16,863 [INFO] 从文件加载商品标题，共 26 项
 2026-01-29 14:49:16,864 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-01-29 15:46:08,174 [INFO] 日志系统初始化完成
+2026-01-29 15:46:08,174 [INFO] === 开始一次商品监控 ===
+2026-01-29 15:46:08,174 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-01-29 15:46:09,387 [INFO] 获取到 25 个商品标题
+2026-01-29 15:46:09,388 [INFO] 从文件加载商品标题，共 26 项
+2026-01-29 15:46:09,388 [INFO] 下架商品: ["Albula Insulated Hooded Jacket - Men's"]
+2026-01-29 15:46:11,182 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1769701571}
+2026-01-29 15:46:11,183 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
