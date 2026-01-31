@@ -19821,3 +19821,11 @@
 2026-01-31 08:41:11,150 [INFO] 发现新品: ["Aconcagua Light Midlayer Jacket - Men's", "Stoney Hardshell Thermo Pants - Men's"]
 2026-01-31 08:41:12,570 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1769848872}
 2026-01-31 08:41:12,571 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-01-31 09:37:05,500 [INFO] 日志系统初始化完成
+2026-01-31 09:37:05,500 [INFO] === 开始一次商品监控 ===
+2026-01-31 09:37:05,500 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-01-31 09:37:05,918 [INFO] 获取到 21 个商品标题
+2026-01-31 09:37:05,920 [INFO] 从文件加载商品标题，共 23 项
+2026-01-31 09:37:05,920 [INFO] 下架商品: ["Aconcagua Light Midlayer Jacket - Men's", "Stoney Hardshell Thermo Pants - Men's"]
+2026-01-31 09:37:07,165 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1769852227}
+2026-01-31 09:37:07,166 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
