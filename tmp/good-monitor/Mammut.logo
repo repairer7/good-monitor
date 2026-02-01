@@ -19959,3 +19959,12 @@
 2026-02-01 10:36:58,806 [INFO] 获取到 21 个商品标题
 2026-02-01 10:36:58,807 [INFO] 从文件加载商品标题，共 21 项
 2026-02-01 10:36:58,808 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-02-01 11:29:45,197 [INFO] 日志系统初始化完成
+2026-02-01 11:29:45,197 [INFO] === 开始一次商品监控 ===
+2026-02-01 11:29:45,197 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-02-01 11:29:46,509 [INFO] 获取到 19 个商品标题
+2026-02-01 11:29:46,511 [INFO] 从文件加载商品标题，共 21 项
+2026-02-01 11:29:46,511 [INFO] 下架商品: ["Fleece Cap - Men's", "Ducan Guide Hardshell Hooded Jacket - Men's"]
+2026-02-01 11:29:46,882 [WARNING] Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(104, 'Connection reset by peer')': /wjZcttgVejaMMHZRGyDmLm/TheLastHunt%20%E4%B8%8B%E6%9E%B6%20Mammut%20%E4%BA%86/Fleece%20Cap%20-%20Men%27s%0ADucan%20Guide%20Hardshell%20Hooded%20Jacket%20-%20Men%27s?group=Product%20monitor
+2026-02-01 11:29:48,839 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1769945388}
+2026-02-01 11:29:48,840 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
