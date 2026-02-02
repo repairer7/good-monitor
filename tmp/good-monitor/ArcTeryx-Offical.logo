@@ -19847,3 +19847,9 @@
 2026-02-02 10:55:19,194 [INFO] 获取到 16 个商品标题
 2026-02-02 10:55:19,196 [INFO] 从文件加载商品标题，共 16 项
 2026-02-02 10:55:19,196 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_official_titles.json
+2026-02-02 11:40:42,787 [INFO] 日志系统初始化完成
+2026-02-02 11:40:42,787 [INFO] === 开始一次商品监控 ===
+2026-02-02 11:40:44,492 [INFO] 捕获到目标 URL: https://core.dxpapi.com/api/v1/core/?account_id=7359&domain_key=arcteryx_outlet_zh&fl=analytics_name%2Ccollection%2Ccolour_images_map%2Ccolour_images_map_ca%2Cdescription%2Cdiscount_price_ca%2Cgender%2Chover_image%2Cis_new%2Cis_pro%2Cis_revised%2Cprice_ca%2Cpid%2Creview_count%2Crating%2Cslug%2Ctitle%2Cthumb_image&efq=genders%3A%28%22men%22%29&_br_uid_2=1&ref_url=https%3A%2F%2Farcteryx.com%2F&url=https%3A%2F%2Foutlet.arcteryx.com%2Fca%2Fzh%2Fc%2Fmens%2Fshell-jackets&request_id=1793159318772&rows=200&start=0&view_id=ca&request_type=search&search_type=category&q=shell-jackets-men
+2026-02-02 11:40:49,597 [INFO] 获取到 16 个商品标题
+2026-02-02 11:40:49,598 [INFO] 从文件加载商品标题，共 16 项
+2026-02-02 11:40:49,599 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_official_titles.json
