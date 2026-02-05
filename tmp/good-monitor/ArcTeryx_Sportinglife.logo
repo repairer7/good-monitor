@@ -15161,3 +15161,11 @@
 2026-02-04 23:36:33,837 [INFO] 获取到 34 个商品标题
 2026-02-04 23:36:33,839 [INFO] 从文件加载商品标题，共 34 项
 2026-02-04 23:36:33,839 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
+2026-02-05 02:48:45,986 [INFO] 日志系统初始化完成
+2026-02-05 02:48:45,986 [INFO] === 开始一次商品监控 ===
+2026-02-05 02:48:45,986 [INFO] 正在请求页面: https://www.sportinglife.ca/en-CA/arcteryx/sale/?prefn1=gender&prefv1=Men%27s
+2026-02-05 02:48:47,000 [INFO] 获取到 33 个商品标题
+2026-02-05 02:48:47,001 [INFO] 从文件加载商品标题，共 34 项
+2026-02-05 02:48:47,001 [INFO] 下架商品: ["Men's Cerium Hybrid Hoody Jacket"]
+2026-02-05 02:48:48,219 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1770259728}
+2026-02-05 02:48:48,220 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
