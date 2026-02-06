@@ -15343,3 +15343,11 @@
 2026-02-06 11:41:14,793 [INFO] 下架商品: ["Men's Kragg SL Cotton Long Sleeve T-Shirt", "Men's Atom Jacket"]
 2026-02-06 11:41:15,667 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1770378075}
 2026-02-06 11:41:15,669 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
+2026-02-06 13:19:30,140 [INFO] 日志系统初始化完成
+2026-02-06 13:19:30,140 [INFO] === 开始一次商品监控 ===
+2026-02-06 13:19:30,140 [INFO] 正在请求页面: https://www.sportinglife.ca/en-CA/arcteryx/sale/?prefn1=gender&prefv1=Men%27s
+2026-02-06 13:19:31,232 [INFO] 获取到 32 个商品标题
+2026-02-06 13:19:31,233 [INFO] 从文件加载商品标题，共 35 项
+2026-02-06 13:19:31,233 [INFO] 下架商品: ["Men's Aerios FL 2 Mid GTX Hiking Shoe", "Men's Thorium Hoody Jacket", "Men's Beta LT Jacket"]
+2026-02-06 13:19:32,684 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1770383972}
+2026-02-06 13:19:32,685 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
