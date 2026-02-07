@@ -15491,3 +15491,11 @@
 2026-02-07 14:35:59,780 [INFO] 获取到 35 个商品标题
 2026-02-07 14:35:59,781 [INFO] 从文件加载商品标题，共 35 项
 2026-02-07 14:35:59,782 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
+2026-02-07 15:34:47,083 [INFO] 日志系统初始化完成
+2026-02-07 15:34:47,083 [INFO] === 开始一次商品监控 ===
+2026-02-07 15:34:47,083 [INFO] 正在请求页面: https://www.sportinglife.ca/en-CA/arcteryx/sale/?prefn1=gender&prefv1=Men%27s
+2026-02-07 15:34:47,905 [INFO] 获取到 34 个商品标题
+2026-02-07 15:34:47,907 [INFO] 从文件加载商品标题，共 35 项
+2026-02-07 15:34:47,907 [INFO] 下架商品: ["Men's Cormac Hoody Top"]
+2026-02-07 15:34:49,575 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1770478489}
+2026-02-07 15:34:49,576 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
