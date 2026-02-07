@@ -15471,3 +15471,11 @@
 2026-02-07 11:30:32,817 [INFO] 发现新品: ["Men's Delta 1/2-Zip Top", "Men's Thorium Hoody Jacket", "Men's Kyanite Jacket", "Men's Konseal Pant"]
 2026-02-07 11:30:34,420 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1770463834}
 2026-02-07 11:30:34,625 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
+2026-02-07 13:08:14,037 [INFO] 日志系统初始化完成
+2026-02-07 13:08:14,037 [INFO] === 开始一次商品监控 ===
+2026-02-07 13:08:14,037 [INFO] 正在请求页面: https://www.sportinglife.ca/en-CA/arcteryx/sale/?prefn1=gender&prefv1=Men%27s
+2026-02-07 13:08:14,942 [INFO] 获取到 35 个商品标题
+2026-02-07 13:08:14,943 [INFO] 从文件加载商品标题，共 36 项
+2026-02-07 13:08:14,943 [INFO] 下架商品: ["Men's Delta 1/2-Zip Top"]
+2026-02-07 13:08:16,244 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1770469696}
+2026-02-07 13:08:16,245 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
