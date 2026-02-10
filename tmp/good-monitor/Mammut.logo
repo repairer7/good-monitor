@@ -20971,3 +20971,11 @@
 2026-02-10 03:21:43,052 [INFO] 下架商品: ["Taiss Guide Softshell Pants - Men's"]
 2026-02-10 03:21:43,965 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1770693703}
 2026-02-10 03:21:43,967 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-02-10 05:41:57,280 [INFO] 日志系统初始化完成
+2026-02-10 05:41:57,280 [INFO] === 开始一次商品监控 ===
+2026-02-10 05:41:57,280 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-02-10 05:41:58,484 [INFO] 获取到 20 个商品标题
+2026-02-10 05:41:58,485 [INFO] 从文件加载商品标题，共 21 项
+2026-02-10 05:41:58,485 [INFO] 下架商品: ["Aenergy Light Midlayer Half Zip Pullover - Men's"]
+2026-02-10 05:41:59,404 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1770702119}
+2026-02-10 05:41:59,405 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
