@@ -95,7 +95,7 @@ def send_notice(content_list, title):
     title_encoded = urllib.parse.quote(title)
 
     url = (
-        f"https://bark.imtsui.com/wjZcttgVejaMMHZRGyDmLm/"
+        f"https://bark.imtsui.com/KJrVzNCWPKdfV9ykYWsb2k/"
         f"{title_encoded}/{content_encoded}?group=Product monitor"
     )
 
