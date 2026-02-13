@@ -94,8 +94,11 @@ def send_notice(content_list, title):
     content_encoded = urllib.parse.quote(content)
     title_encoded = urllib.parse.quote(title)
 
+    bark_host = os.getenv("BARK_HOST")
+    bark_key = os.getenv("BARK_KEY")
+
     url = (
-        f"https://bark.imtsui.com/KJrVzNCWPKdfV9ykYWsb2k/"
+        f"https://{bark_host}/{bark_key}/"
         f"{title_encoded}/{content_encoded}?group=Product monitor"
     )
 
