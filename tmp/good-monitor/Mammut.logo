@@ -21477,3 +21477,11 @@
 2026-02-14 19:32:05,586 [INFO] 下架商品: ["Stoney Hardshell Pants - Men's"]
 2026-02-14 19:32:06,765 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1771097526}
 2026-02-14 19:32:06,766 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-02-14 20:36:50,274 [INFO] 日志系统初始化完成
+2026-02-14 20:36:50,274 [INFO] === 开始一次商品监控 ===
+2026-02-14 20:36:50,274 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-02-14 20:36:51,156 [INFO] 获取到 17 个商品标题
+2026-02-14 20:36:51,158 [INFO] 从文件加载商品标题，共 16 项
+2026-02-14 20:36:51,158 [INFO] 发现新品: ["Stoney Hardshell Pants - Men's"]
+2026-02-14 20:36:52,416 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1771101412}
+2026-02-14 20:36:52,418 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
