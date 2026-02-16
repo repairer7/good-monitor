@@ -21675,3 +21675,11 @@
 2026-02-16 13:23:03,895 [INFO] 获取到 17 个商品标题
 2026-02-16 13:23:03,896 [INFO] 从文件加载商品标题，共 17 项
 2026-02-16 13:23:03,897 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-02-16 14:53:29,352 [INFO] 日志系统初始化完成
+2026-02-16 14:53:29,352 [INFO] === 开始一次商品监控 ===
+2026-02-16 14:53:29,352 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-02-16 14:53:30,719 [INFO] 获取到 18 个商品标题
+2026-02-16 14:53:30,721 [INFO] 从文件加载商品标题，共 17 项
+2026-02-16 14:53:30,721 [INFO] 发现新品: ["Blackfin III Mid DT Hiking Boots - Men's"]
+2026-02-16 14:53:32,263 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1771253612}
+2026-02-16 14:53:32,264 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
