@@ -16819,3 +16819,9 @@
 2026-02-18 20:51:22,540 [INFO] 发现新品: ["Men's Sabre Pant"]
 2026-02-18 20:51:24,103 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1771447884}
 2026-02-18 20:51:24,105 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
+2026-02-18 21:41:50,075 [INFO] 日志系统初始化完成
+2026-02-18 21:41:50,075 [INFO] === 开始一次商品监控 ===
+2026-02-18 21:41:50,075 [INFO] 正在请求页面: https://www.sportinglife.ca/en-CA/arcteryx/sale/?prefn1=gender&prefv1=Men%27s
+2026-02-18 21:41:50,902 [INFO] 获取到 31 个商品标题
+2026-02-18 21:41:50,903 [INFO] 从文件加载商品标题，共 31 项
+2026-02-18 21:41:50,904 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
