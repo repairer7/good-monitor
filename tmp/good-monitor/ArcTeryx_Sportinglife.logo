@@ -17151,3 +17151,9 @@
 2026-02-21 13:06:53,623 [INFO] 下架商品: ["Men's Cormac Crew Neck Long Sleeve T-Shirt", "Men's Cormac Hoody Top", "Men's Rho LT Crew Neck Top", "Men's Norvan Hybrid Tight"]
 2026-02-21 13:06:55,168 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1771679215}
 2026-02-21 13:06:55,170 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
+2026-02-21 13:50:22,997 [INFO] 日志系统初始化完成
+2026-02-21 13:50:22,998 [INFO] === 开始一次商品监控 ===
+2026-02-21 13:50:22,998 [INFO] 正在请求页面: https://www.sportinglife.ca/en-CA/arcteryx/sale/?prefn1=gender&prefv1=Men%27s
+2026-02-21 13:50:24,219 [INFO] 获取到 24 个商品标题
+2026-02-21 13:50:24,221 [INFO] 从文件加载商品标题，共 24 项
+2026-02-21 13:50:24,221 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
