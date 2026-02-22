@@ -17331,3 +17331,13 @@
 2026-02-22 20:37:11,005 [INFO] 下架商品: ["Men's Kyanite Jacket"]
 2026-02-22 20:37:11,837 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1771792631}
 2026-02-22 20:37:11,839 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
+2026-02-22 21:33:01,892 [INFO] 日志系统初始化完成
+2026-02-22 21:33:01,892 [INFO] === 开始一次商品监控 ===
+2026-02-22 21:33:01,892 [INFO] 正在请求页面: https://www.sportinglife.ca/en-CA/arcteryx/sale/?prefn1=gender&prefv1=Men%27s
+2026-02-22 21:33:02,716 [INFO] 获取到 22 个商品标题
+2026-02-22 21:33:02,718 [INFO] 从文件加载商品标题，共 22 项
+2026-02-22 21:33:02,718 [INFO] 发现新品: ["Men's Kyanite Jacket"]
+2026-02-22 21:33:03,555 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1771795983}
+2026-02-22 21:33:03,556 [INFO] 下架商品: ["Men's Norvan LD 3 Trail Running Shoe"]
+2026-02-22 21:33:04,402 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1771795984}
+2026-02-22 21:33:04,404 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
