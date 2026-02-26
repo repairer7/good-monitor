@@ -17780,3 +17780,9 @@
 2026-02-26 14:57:33,031 [WARNING] Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='bark.imtsui.com', port=443): Read timed out. (read timeout=10)")': /KJrVzNCWPKdfV9ykYWsb2k/SportingLife%20%E4%B8%8B%E6%9E%B6%20Arc%27teryx%20%E4%BA%86/Men%27s%20Kyanite%20Jacket?group=Product%20monitor
 2026-02-26 14:57:43,239 [ERROR] 推送失败: HTTPSConnectionPool(host='bark.imtsui.com', port=443): Max retries exceeded with url: /KJrVzNCWPKdfV9ykYWsb2k/SportingLife%20%E4%B8%8B%E6%9E%B6%20Arc%27teryx%20%E4%BA%86/Men%27s%20Kyanite%20Jacket?group=Product%20monitor (Caused by ReadTimeoutError("HTTPSConnectionPool(host='bark.imtsui.com', port=443): Read timed out. (read timeout=10)"))
 2026-02-26 14:57:43,239 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
+2026-02-26 16:00:58,086 [INFO] 日志系统初始化完成
+2026-02-26 16:00:58,086 [INFO] === 开始一次商品监控 ===
+2026-02-26 16:00:58,086 [INFO] 正在请求页面: https://www.sportinglife.ca/en-CA/arcteryx/sale/?prefn1=gender&prefv1=Men%27s
+2026-02-26 16:00:58,823 [INFO] 获取到 20 个商品标题
+2026-02-26 16:00:58,824 [INFO] 从文件加载商品标题，共 20 项
+2026-02-26 16:00:58,825 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
