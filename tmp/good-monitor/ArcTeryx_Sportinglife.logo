@@ -18294,3 +18294,13 @@
 2026-03-02 19:00:28,267 [INFO] 获取到 36 个商品标题
 2026-03-02 19:00:28,268 [INFO] 从文件加载商品标题，共 36 项
 2026-03-02 19:00:28,268 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
+2026-03-02 19:40:54,776 [INFO] 日志系统初始化完成
+2026-03-02 19:40:54,776 [INFO] === 开始一次商品监控 ===
+2026-03-02 19:40:54,776 [INFO] 正在请求页面: https://www.sportinglife.ca/en-CA/arcteryx/sale/?prefn1=gender&prefv1=Men%27s
+2026-03-02 19:40:55,596 [INFO] 获取到 34 个商品标题
+2026-03-02 19:40:55,597 [INFO] 从文件加载商品标题，共 36 项
+2026-03-02 19:40:55,597 [INFO] 发现新品: ['Men\'s Norvan 7" Short']
+2026-03-02 19:40:56,362 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1772480456}
+2026-03-02 19:40:56,363 [INFO] 下架商品: ["Men's Covert 1/2-Zip Top", "Men's Kyanite Hoody Jacket", "Men's Cormac Arc'Bird Logo Short Sleeve T-Shirt"]
+2026-03-02 19:40:56,550 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1772480456}
+2026-03-02 19:40:56,551 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
