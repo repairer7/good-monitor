@@ -18512,3 +18512,11 @@
 2026-03-04 14:48:15,932 [INFO] 获取到 34 个商品标题
 2026-03-04 14:48:15,934 [INFO] 从文件加载商品标题，共 34 项
 2026-03-04 14:48:15,934 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
+2026-03-04 15:53:06,631 [INFO] 日志系统初始化完成
+2026-03-04 15:53:06,632 [INFO] === 开始一次商品监控 ===
+2026-03-04 15:53:06,632 [INFO] 正在请求页面: https://www.sportinglife.ca/en-CA/arcteryx/sale/?prefn1=gender&prefv1=Men%27s
+2026-03-04 15:53:07,476 [INFO] 获取到 33 个商品标题
+2026-03-04 15:53:07,477 [INFO] 从文件加载商品标题，共 34 项
+2026-03-04 15:53:07,477 [INFO] 下架商品: ["Men's Sabre Insulated Jacket"]
+2026-03-04 15:53:08,754 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1772639588}
+2026-03-04 15:53:08,756 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
