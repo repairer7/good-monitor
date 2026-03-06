@@ -23453,3 +23453,9 @@
 2026-03-06 07:43:06,277 [INFO] 发现新品: ["Rush Jacket Men's", "Rush Jacket Men's", "Sabre Jacket Men's", "Sabre Jacket Men's", "Sabre Jacket Print Men's", "Sabre SV Jacket Men's", "Sabre SV Jacket Men's", "Monitor Coat Men's", "Incenter Coat Men's", "Alpha SV Jacket Men's", "Alpha SV Jacket Men's", "Gamma MX Hoody Men's", "Beta AR Jacket Men's", "Spere LT Blazer Men's", "Alpha Jacket Men's", "Alpha Lightweight Jacket Men's", "Gamma Lightweight Jacket Men's", "Beta AR Jacket Stormhood Men's", "Arris Jacket Men's", "Spere Jacket Men's", "Indisce Blazer Men's", "Spere LT Jacket Men's", "Beta SL Jacket Men's", "Diode Jacket Men's", "Quartic Jacket Men's"]
 2026-03-06 07:43:07,316 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1772782987}
 2026-03-06 07:43:07,317 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_official_titles.json
+2026-03-06 08:51:16,750 [INFO] 日志系统初始化完成
+2026-03-06 08:51:16,750 [INFO] === 开始一次商品监控 ===
+2026-03-06 08:51:18,683 [INFO] 捕获到目标 URL: https://core.dxpapi.com/api/v1/core/?account_id=7359&domain_key=arcteryx_outlet_zh&fl=analytics_name%2Ccollection%2Ccolour_images_map%2Ccolour_images_map_ca%2Cdescription%2Cdiscount_price_ca%2Cgender%2Chover_image%2Cis_new%2Cis_pro%2Cis_revised%2Cprice_ca%2Cpid%2Creview_count%2Crating%2Cslug%2Ctitle%2Cthumb_image&efq=genders%3A%28%22men%22%29&_br_uid_2=1&ref_url=https%3A%2F%2Farcteryx.com%2F&url=https%3A%2F%2Foutlet.arcteryx.com%2Fca%2Fzh%2Fc%2Fmens%2Fshell-jackets&request_id=4659953666977&rows=200&start=0&view_id=ca&request_type=search&search_type=category&q=shell-jackets-men
+2026-03-06 08:51:23,798 [INFO] 获取到 25 个商品标题
+2026-03-06 08:51:23,799 [INFO] 从文件加载商品标题，共 25 项
+2026-03-06 08:51:23,800 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_official_titles.json
