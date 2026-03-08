@@ -19046,3 +19046,11 @@
 2026-03-08 22:33:58,581 [INFO] 获取到 27 个商品标题
 2026-03-08 22:33:58,582 [INFO] 从文件加载商品标题，共 27 项
 2026-03-08 22:33:58,582 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
+2026-03-08 23:33:27,875 [INFO] 日志系统初始化完成
+2026-03-08 23:33:27,875 [INFO] === 开始一次商品监控 ===
+2026-03-08 23:33:27,875 [INFO] 正在请求页面: https://www.sportinglife.ca/en-CA/arcteryx/sale/?prefn1=gender&prefv1=Men%27s
+2026-03-08 23:33:28,891 [INFO] 获取到 26 个商品标题
+2026-03-08 23:33:28,893 [INFO] 从文件加载商品标题，共 27 项
+2026-03-08 23:33:28,893 [INFO] 下架商品: ["Men's Delta Pullover Hoody Jacket"]
+2026-03-08 23:33:29,621 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1773012809}
+2026-03-08 23:33:29,623 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
