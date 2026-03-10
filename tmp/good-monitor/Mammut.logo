@@ -24253,3 +24253,11 @@
 2026-03-10 15:00:19,910 [INFO] 获取到 14 个商品标题
 2026-03-10 15:00:19,911 [INFO] 从文件加载商品标题，共 14 项
 2026-03-10 15:00:19,912 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-03-10 16:06:54,460 [INFO] 日志系统初始化完成
+2026-03-10 16:06:54,460 [INFO] === 开始一次商品监控 ===
+2026-03-10 16:06:54,460 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-03-10 16:06:55,373 [INFO] 获取到 13 个商品标题
+2026-03-10 16:06:55,374 [INFO] 从文件加载商品标题，共 14 项
+2026-03-10 16:06:55,375 [INFO] 下架商品: ["Saentis TR Low GTX Trail Running Shoes - Men's"]
+2026-03-10 16:06:56,284 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1773158816}
+2026-03-10 16:06:56,285 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
