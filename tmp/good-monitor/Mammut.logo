@@ -24315,3 +24315,11 @@
 2026-03-11 02:43:49,797 [INFO] 获取到 13 个商品标题
 2026-03-11 02:43:49,798 [INFO] 从文件加载商品标题，共 13 项
 2026-03-11 02:43:49,798 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-03-11 04:50:30,470 [INFO] 日志系统初始化完成
+2026-03-11 04:50:30,470 [INFO] === 开始一次商品监控 ===
+2026-03-11 04:50:30,470 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-03-11 04:50:31,135 [INFO] 获取到 12 个商品标题
+2026-03-11 04:50:31,137 [INFO] 从文件加载商品标题，共 13 项
+2026-03-11 04:50:31,137 [INFO] 下架商品: ["Sapuen High GTX Hiking Shoes - Men's"]
+2026-03-11 04:50:32,694 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1773204632}
+2026-03-11 04:50:32,695 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
