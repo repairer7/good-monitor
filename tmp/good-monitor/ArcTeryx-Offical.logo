@@ -24673,3 +24673,6 @@
 2026-03-16 19:16:34,729 [INFO] 下架商品: ["Alpha SV Jacket Men's"]
 2026-03-16 19:16:35,092 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1773688595}
 2026-03-16 19:16:35,093 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_official_titles.json
+2026-03-16 20:50:28,060 [INFO] 日志系统初始化完成
+2026-03-16 20:50:28,060 [INFO] === 开始一次商品监控 ===
+2026-03-16 20:50:35,561 [WARNING] 未捕获到目标 URL，退出本次监控
