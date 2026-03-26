@@ -26017,3 +26017,11 @@
 2026-03-26 11:03:43,012 [INFO] 获取到 34 个商品标题
 2026-03-26 11:03:43,013 [INFO] 从文件加载商品标题，共 34 项
 2026-03-26 11:03:43,013 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-03-26 11:55:08,669 [INFO] 日志系统初始化完成
+2026-03-26 11:55:08,669 [INFO] === 开始一次商品监控 ===
+2026-03-26 11:55:08,669 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-03-26 11:55:09,641 [INFO] 获取到 37 个商品标题
+2026-03-26 11:55:09,642 [INFO] 从文件加载商品标题，共 34 项
+2026-03-26 11:55:09,642 [INFO] 发现新品: ["Ophir Fast Adjust Climbing Harness - Men's", "Alvra Long Sleeve Shirt - Men's", "Runbold Guide Softshell Pants - Men's"]
+2026-03-26 11:55:10,664 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1774526110}
+2026-03-26 11:55:10,666 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
