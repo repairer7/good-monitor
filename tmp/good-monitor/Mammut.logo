@@ -25985,3 +25985,11 @@
 2026-03-25 23:44:47,176 [INFO] 获取到 35 个商品标题
 2026-03-25 23:44:47,177 [INFO] 从文件加载商品标题，共 35 项
 2026-03-25 23:44:47,178 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-03-26 03:19:47,206 [INFO] 日志系统初始化完成
+2026-03-26 03:19:47,206 [INFO] === 开始一次商品监控 ===
+2026-03-26 03:19:47,206 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-03-26 03:19:49,280 [INFO] 获取到 34 个商品标题
+2026-03-26 03:19:49,281 [INFO] 从文件加载商品标题，共 35 项
+2026-03-26 03:19:49,282 [INFO] 下架商品: ["Mountain Eiger T-Shirt - Men's"]
+2026-03-26 03:19:50,191 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1774495190}
+2026-03-26 03:19:50,193 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
