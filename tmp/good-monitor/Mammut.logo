@@ -26239,3 +26239,9 @@
 2026-03-28 11:35:35,967 [INFO] 发现新品: ["Sertig II Low Hiking Shoes - Men's"]
 2026-03-28 11:35:36,997 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1774697736}
 2026-03-28 11:35:36,999 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-03-28 13:14:07,867 [INFO] 日志系统初始化完成
+2026-03-28 13:14:07,867 [INFO] === 开始一次商品监控 ===
+2026-03-28 13:14:07,867 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-03-28 13:14:08,995 [INFO] 获取到 37 个商品标题
+2026-03-28 13:14:08,996 [INFO] 从文件加载商品标题，共 37 项
+2026-03-28 13:14:08,997 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
