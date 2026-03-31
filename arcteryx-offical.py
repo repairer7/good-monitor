@@ -11,7 +11,7 @@ from collections import Counter
 # ========== 设置日志 ==========
 log_dir = os.path.join(os.getcwd(), "tmp/good-monitor")
 os.makedirs(log_dir, exist_ok=True)
-log_path = os.path.join(log_dir, "ArcTeryx-Offical.logo")
+log_path = os.path.join(log_dir, "ArcTeryx-Official.log")
 
 logging.basicConfig(
     level=logging.INFO,
@@ -26,7 +26,7 @@ log = logging.getLogger()
 log.info("日志系统初始化完成")
 
 # ========== 配置参数 ==========
-KEYWORD = "dxpapi"
+KEYWORD = "execute-api"
 PAGE_URL = "https://outlet.arcteryx.com/ca/zh/c/mens/shell-jackets"
 DATA_FILE = os.path.join(log_dir, "arcteryx_official_titles.json")
 
@@ -45,12 +45,12 @@ def get_target_url(keyword: str, page_url: str) -> str:
         context.on("request", handle_request)
         page = context.new_page()
         page.goto(page_url, wait_until="domcontentloaded")
-        page.wait_for_timeout(5000)
+        page.wait_for_load_state("networkidle")
         browser.close()
     return target[0]
 
-# ========== 从 API 获取 analytics_name 字段 ==========
-def fetch_analytics_names(url: str):
+# ========== 从 API 获取 marketingName 字段 ==========
+def fetch_marketing_names(url: str):
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
     }
@@ -58,14 +58,17 @@ def fetch_analytics_names(url: str):
     resp.raise_for_status()
     data = resp.json()
 
-    analytics_names = []
-    docs = data.get("response", {}).get("docs", [])
-    for item in docs:
-        if "analytics_name" in item:
-            analytics_names.append(item["analytics_name"])
+    marketing_names = []
+    if isinstance(data, list):  # execute-api 返回的是数组
+        for item in data:
+            if "marketingName" in item:
+                marketing_names.append(item["marketingName"])
+    else:
+        log.error("API 返回数据不是预期的列表结构")
+        return []
 
-    log.info(f"获取到 {len(analytics_names)} 个商品标题")
-    return analytics_names
+    log.info(f"获取到 {len(marketing_names)} 个商品标题")
+    return marketing_names
 
 # ========== 文件读写 ==========
 def save_titles_to_file(titles):
@@ -87,9 +90,7 @@ def send_notice(content_list, title):
     if not content_list:
         return
 
-    # 用全角斜杠替换 /，避免路径分隔符问题
     safe_list = [t.replace("/", "／") for t in content_list]
-
     content = "\n".join(safe_list)
     content_encoded = urllib.parse.quote(content)
     title_encoded = urllib.parse.quote(title)
@@ -126,20 +127,18 @@ def monitor():
         log.warning("未捕获到目标 URL，退出本次监控")
         return
 
-    current_titles = fetch_analytics_names(target_url)
+    current_titles = fetch_marketing_names(target_url)
     previous_titles = load_titles_from_file()
 
     curr = Counter(current_titles)
     prev = Counter(previous_titles)
 
-    # 新增商品（计数增加）
     new_items = []
     for item in curr:
         if curr[item] > prev[item]:
             diff = curr[item] - prev[item]
             new_items.extend([item] * diff)
 
-    # 下架商品（计数减少）
     old_items = []
     for item in prev:
         if prev[item] > curr[item]:
