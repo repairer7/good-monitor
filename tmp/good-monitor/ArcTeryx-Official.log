@@ -8,3 +8,6 @@
 2026-03-31 12:47:51,530 [INFO] 下架商品: ["Sabre Jacket Men's", "Sabre Jacket Men's", "Sabre Jacket Print Men's", "Rush Jacket Men's", "Rush Jacket Men's", "Monitor Coat Men's", "Alpha Jacket Men's", "Spere LT Blazer Men's", "Indisce Blazer Men's", "Alpha Lightweight Jacket Men's", "Spere Jacket Men's"]
 2026-03-31 12:47:51,967 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1774961271}
 2026-03-31 12:47:52,012 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_official_titles.json
+2026-03-31 19:00:42,712 [INFO] 日志系统初始化完成
+2026-03-31 19:00:42,712 [INFO] === 开始一次商品监控 ===
+2026-03-31 19:00:48,624 [WARNING] 未捕获到目标 URL，退出本次监控
