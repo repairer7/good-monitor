@@ -1,0 +1,10 @@
+2026-03-31 12:47:23,991 [INFO] 日志系统初始化完成
+2026-03-31 12:47:23,991 [INFO] === 开始一次商品监控 ===
+2026-03-31 12:47:44,186 [INFO] 捕获到目标 URL: https://jh5e3sxgk0.execute-api.us-west-2.amazonaws.com/product-feed/products?market=sale&language=zh&country=ca&gender=mens&category=shelljackets&subCategory=&env=prod
+2026-03-31 12:47:50,024 [INFO] 获取到 11 个商品标题
+2026-03-31 12:47:50,025 [INFO] 从文件加载商品标题，共 11 项
+2026-03-31 12:47:50,025 [INFO] 发现新品: ['Indisce西装夹克 男装', 'Monitor大衣 男装', 'Sabre印花夹克 男装', 'Macai外套夹克 男装', 'Sabre夹克 男装', 'Sabre夹克 男装', 'Alpha 夹克 男装', 'Alpha SV 夹克 男装', 'Rush Jacket 滑雪夹克 男装', 'Spere LT西装外套 男装', 'Rush夹克 男装']
+2026-03-31 12:47:51,529 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1774961271}
+2026-03-31 12:47:51,530 [INFO] 下架商品: ["Sabre Jacket Men's", "Sabre Jacket Men's", "Sabre Jacket Print Men's", "Rush Jacket Men's", "Rush Jacket Men's", "Monitor Coat Men's", "Alpha Jacket Men's", "Spere LT Blazer Men's", "Indisce Blazer Men's", "Alpha Lightweight Jacket Men's", "Spere Jacket Men's"]
+2026-03-31 12:47:51,967 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1774961271}
+2026-03-31 12:47:52,012 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_official_titles.json
