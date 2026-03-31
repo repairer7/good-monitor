@@ -2,8 +2,6 @@ name: Website Product Monitor
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '8 * * * *'
 
 jobs:
   run-scripts:
