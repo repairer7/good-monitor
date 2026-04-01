@@ -45,7 +45,7 @@ def get_target_url(keyword: str, page_url: str) -> str:
         context.on("request", handle_request)
         page = context.new_page()
         page.goto(page_url, wait_until="domcontentloaded")
-        page.wait_for_load_state("networkidle")
+        page.wait_for_load_state("load")
         browser.close()
     return target[0]
 
