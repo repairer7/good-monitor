@@ -26,49 +26,32 @@ log = logging.getLogger()
 log.info("日志系统初始化完成")
 
 # ========== 配置参数 ==========
-KEYWORD = "execute-api"
 PAGE_URL = "https://outlet.arcteryx.com/ca/zh/c/mens/shell-jackets"
 DATA_FILE = os.path.join(log_dir, "arcteryx_official_titles.json")
 
-# ========== 获取页面加载过程中的目标 API URL ==========
-def get_target_url(keyword: str, page_url: str) -> str:
-    target = [None]
+# ========== Playwright 抓取商品名称 ==========
+def get_titles_by_playwright(page_url: str):
+    titles = []
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
-        context = browser.new_context()
+        page = browser.new_page()
 
-        def handle_request(request):
-            if keyword in request.url and target[0] is None:
-                target[0] = request.url
-                log.info(f"捕获到目标 URL: {target[0]}")
+        log.info(f"打开页面: {page_url}")
+        page.goto(page_url, wait_until="load", timeout=60000)
 
-        context.on("request", handle_request)
-        page = context.new_page()
-        page.goto(page_url, wait_until="domcontentloaded")
-        page.wait_for_load_state("load")
+        # 等待商品名称渲染
+        page.wait_for_selector(".product-tile-name", timeout=60000)
+
+        # 抓取所有商品名称
+        titles = page.eval_on_selector_all(
+            ".product-tile-name",
+            "els => els.map(e => e.innerText.trim())"
+        )
+
         browser.close()
-    return target[0]
 
-# ========== 从 API 获取 marketingName 字段 ==========
-def fetch_marketing_names(url: str):
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
-    }
-    resp = requests.get(url, headers=headers, timeout=10)
-    resp.raise_for_status()
-    data = resp.json()
-
-    marketing_names = []
-    if isinstance(data, list):  # execute-api 返回的是数组
-        for item in data:
-            if "marketingName" in item:
-                marketing_names.append(item["marketingName"])
-    else:
-        log.error("API 返回数据不是预期的列表结构")
-        return []
-
-    log.info(f"获取到 {len(marketing_names)} 个商品标题")
-    return marketing_names
+    log.info(f"抓取到 {len(titles)} 个商品名称")
+    return titles
 
 # ========== 文件读写 ==========
 def save_titles_to_file(titles):
@@ -122,12 +105,9 @@ def send_notice(content_list, title):
 # ========== 主监控逻辑 ==========
 def monitor():
     log.info("=== 开始一次商品监控 ===")
-    target_url = get_target_url(KEYWORD, PAGE_URL)
-    if not target_url:
-        log.warning("未捕获到目标 URL，退出本次监控")
-        return
 
-    current_titles = fetch_marketing_names(target_url)
+    # 直接用 Playwright 抓商品名称
+    current_titles = get_titles_by_playwright(PAGE_URL)
     previous_titles = load_titles_from_file()
 
     curr = Counter(current_titles)
