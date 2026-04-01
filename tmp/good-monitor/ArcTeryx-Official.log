@@ -25,3 +25,13 @@
 2026-04-01 02:49:03,961 [INFO] 下架商品: ['Indisce西装夹克 男装', 'Sabre夹克 男装', 'Alpha SV 夹克 男装']
 2026-04-01 02:49:05,051 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1775011745}
 2026-04-01 02:49:05,053 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_official_titles.json
+2026-04-01 02:54:59,975 [INFO] 日志系统初始化完成
+2026-04-01 02:54:59,975 [INFO] === 开始一次商品监控 ===
+2026-04-01 02:55:00,835 [INFO] 打开页面: https://outlet.arcteryx.com/ca/zh/c/mens/shell-jackets
+2026-04-01 02:55:05,037 [INFO] 抓取到 8 个商品名称
+2026-04-01 02:55:05,037 [INFO] 从文件加载商品标题，共 5 项
+2026-04-01 02:55:05,037 [INFO] 发现新品: ['Macai外套夹克 男装', 'Alpha 夹克 男装', 'Monitor大衣 男装', 'Rush夹克 男装']
+2026-04-01 02:55:05,724 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1775012105}
+2026-04-01 02:55:05,724 [INFO] 下架商品: ['123']
+2026-04-01 02:55:06,124 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1775012106}
+2026-04-01 02:55:06,125 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_official_titles.json
