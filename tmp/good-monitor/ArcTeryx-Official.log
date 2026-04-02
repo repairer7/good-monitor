@@ -217,3 +217,9 @@
 2026-04-02 08:00:41,729 [INFO] 下架商品: ['Indisce西装夹克 男装']
 2026-04-02 08:00:42,093 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1775116842}
 2026-04-02 08:00:42,094 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_official_titles.json
+2026-04-02 09:00:37,824 [INFO] 日志系统初始化完成
+2026-04-02 09:00:37,824 [INFO] === 开始一次商品监控 ===
+2026-04-02 09:00:40,130 [INFO] 打开页面: https://outlet.arcteryx.com/ca/zh/c/mens/shell-jackets
+2026-04-02 09:00:45,267 [INFO] 抓取到 8 个商品名称
+2026-04-02 09:00:45,267 [INFO] 从文件加载商品标题，共 8 项
+2026-04-02 09:00:45,268 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_official_titles.json
