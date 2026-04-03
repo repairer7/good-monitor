@@ -428,3 +428,12 @@
 2026-04-03 17:00:47,097 [INFO] 抓取到 10 个商品名称
 2026-04-03 17:00:47,097 [INFO] 从文件加载商品标题，共 10 项
 2026-04-03 17:00:47,098 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_official_titles.json
+2026-04-03 18:00:40,204 [INFO] 日志系统初始化完成
+2026-04-03 18:00:40,204 [INFO] === 开始一次商品监控 ===
+2026-04-03 18:00:40,944 [INFO] 打开页面: https://outlet.arcteryx.com/ca/zh/c/mens/shell-jackets
+2026-04-03 18:00:44,167 [INFO] 开始自动滚动加载所有商品…
+2026-04-03 18:00:47,214 [INFO] 抓取到 2 个商品名称
+2026-04-03 18:00:47,214 [INFO] 从文件加载商品标题，共 10 项
+2026-04-03 18:00:47,214 [INFO] 下架商品: ['Rush Jacket 滑雪夹克 男装', 'Sabre夹克 男装', 'Sabre印花夹克 男装', 'Spere LT西装外套 男装', 'Macai外套夹克 男装', 'Alpha 夹克 男装', 'Monitor大衣 男装', 'Rush夹克 男装']
+2026-04-03 18:00:48,763 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1775239248}
+2026-04-03 18:00:48,764 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_official_titles.json
