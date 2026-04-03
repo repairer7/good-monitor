@@ -37,9 +37,20 @@ def get_titles_by_playwright(page_url: str):
         page = browser.new_page()
 
         log.info(f"打开页面: {page_url}")
-        page.goto(page_url, wait_until="load", timeout=60000)
+        page.goto(page_url, wait_until="networkidle", timeout=60000)
 
-        # 等待商品名称渲染
+        # 自动滚动到底部，触发懒加载
+        log.info("开始自动滚动加载所有商品…")
+        previous_height = None
+        while True:
+            current_height = page.evaluate("document.body.scrollHeight")
+            if previous_height == current_height:
+                break
+            previous_height = current_height
+            page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+            page.wait_for_timeout(800)
+
+        # 等待所有商品名称渲染
         page.wait_for_selector(".product-tile-name", timeout=60000)
 
         # 抓取所有商品名称
@@ -106,7 +117,6 @@ def send_notice(content_list, title):
 def monitor():
     log.info("=== 开始一次商品监控 ===")
 
-    # 直接用 Playwright 抓商品名称
     current_titles = get_titles_by_playwright(PAGE_URL)
     previous_titles = load_titles_from_file()
 
