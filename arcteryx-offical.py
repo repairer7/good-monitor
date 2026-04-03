@@ -37,7 +37,7 @@ def get_titles_by_playwright(page_url: str):
         page = browser.new_page()
 
         log.info(f"打开页面: {page_url}")
-        page.goto(page_url, wait_until="networkidle", timeout=60000)
+        page.goto(page_url, wait_until="load", timeout=60000)
 
         # 自动滚动到底部，触发懒加载
         log.info("开始自动滚动加载所有商品…")
