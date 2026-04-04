@@ -37,9 +37,13 @@ def get_titles_by_playwright(page_url: str):
         page = browser.new_page()
 
         log.info(f"打开页面: {page_url}")
-        page.goto(page_url, wait_until="load", timeout=60000)
+        page.goto(page_url, wait_until="load", timeout=45000)
 
-        # 自动滚动到底部，触发懒加载
+        # 关键：等待首屏商品真正渲染出来（避免骨架屏）
+        log.info("等待首屏商品渲染…")
+        page.wait_for_selector(".product-tile-name", timeout=45000)
+
+        # 再开始滚动加载剩余商品
         log.info("开始自动滚动加载所有商品…")
         previous_height = None
         while True:
@@ -49,9 +53,6 @@ def get_titles_by_playwright(page_url: str):
             previous_height = current_height
             page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
             page.wait_for_timeout(800)
-
-        # 等待所有商品名称渲染
-        page.wait_for_selector(".product-tile-name", timeout=60000)
 
         # 抓取所有商品名称
         titles = page.eval_on_selector_all(
