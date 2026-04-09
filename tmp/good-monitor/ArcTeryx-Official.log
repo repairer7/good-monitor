@@ -1548,3 +1548,13 @@
 2026-04-09 19:00:59,316 [INFO] 抓取到 10 个商品名称
 2026-04-09 19:00:59,317 [INFO] 从文件加载商品标题，共 10 项
 2026-04-09 19:00:59,317 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_official_titles.json
+2026-04-09 20:00:50,453 [INFO] 日志系统初始化完成
+2026-04-09 20:00:50,453 [INFO] === 开始一次商品监控 ===
+2026-04-09 20:00:50,942 [INFO] 打开页面: https://outlet.arcteryx.com/ca/zh/c/mens/shell-jackets
+2026-04-09 20:00:53,591 [INFO] 等待首屏商品渲染…
+2026-04-09 20:00:54,763 [INFO] 开始自动滚动加载所有商品…
+2026-04-09 20:00:56,458 [INFO] 抓取到 8 个商品名称
+2026-04-09 20:00:56,459 [INFO] 从文件加载商品标题，共 10 项
+2026-04-09 20:00:56,459 [INFO] 下架商品: ['Sabre夹克 男装', 'Rush夹克 男装']
+2026-04-09 20:00:56,833 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1775764856}
+2026-04-09 20:00:56,835 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_official_titles.json
