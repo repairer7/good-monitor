@@ -25,7 +25,7 @@ log.info("日志系统初始化完成")
 
 # ========== 配置参数 ==========
 URL = "https://www.sportinglife.ca/en-CA/arcteryx/sale/?prefn1=gender&prefv1=Men%27s"
-CSS_SELECTOR = ".product-tile-name"
+CSS_SELECTOR = ".product-name"
 DATA_FILE = os.path.join(log_dir, "arcteryx_sportinglife_titles.json")
 
 
