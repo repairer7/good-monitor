@@ -1,11 +1,9 @@
-import requests
-from bs4 import BeautifulSoup
+import asyncio
+from playwright.async_api import async_playwright
 import os
 import json
 import logging
 import urllib.parse
-from requests.adapters import HTTPAdapter
-from urllib3.util.retry import Retry
 from collections import Counter
 
 # ========== 设置日志 ==========
@@ -27,19 +25,41 @@ log.info("日志系统初始化完成")
 
 # ========== 配置参数 ==========
 URL = "https://www.sportinglife.ca/en-CA/arcteryx/sale/?prefn1=gender&prefv1=Men%27s"
-CSS_SELECTOR = "span.product-name"
+CSS_SELECTOR = ".product-tile-name"
 DATA_FILE = os.path.join(log_dir, "arcteryx_sportinglife_titles.json")
 
 
-# ========== 抓取商品标题 ==========
+# ========== Playwright 抓取商品标题 ==========
+async def fetch_titles_async():
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True)
+        context = await browser.new_context(
+            user_agent=(
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/123.0.0.0 Safari/537.36"
+            )
+        )
+        page = await context.new_page()
+
+        log.info(f"访问页面: {URL}")
+        await page.goto(URL, wait_until="networkidle")
+
+        # SportingLife 的商品是动态渲染的，必须等待 DOM
+        await page.wait_for_selector(CSS_SELECTOR, timeout=15000)
+
+        titles = await page.eval_on_selector_all(
+            CSS_SELECTOR,
+            "nodes => nodes.map(n => n.innerText.trim())"
+        )
+
+        await browser.close()
+        log.info(f"获取到 {len(titles)} 个商品标题")
+        return titles
+
+
 def fetch_titles():
-    log.info(f"正在请求页面: {URL}")
-    resp = requests.get(URL, timeout=15)
-    resp.raise_for_status()
-    soup = BeautifulSoup(resp.text, "html.parser")
-    titles = [el.get_text(strip=True) for el in soup.select(CSS_SELECTOR)]
-    log.info(f"获取到 {len(titles)} 个商品标题")
-    return titles
+    return asyncio.run(fetch_titles_async())
 
 
 # ========== 文件读写 ==========
@@ -64,7 +84,6 @@ def send_notice(content_list, title):
     if not content_list:
         return
 
-    # 用全角斜杠替换 /，避免路径分隔符问题
     safe_list = [t.replace("/", "／") for t in content_list]
 
     content = "\n".join(safe_list)
@@ -78,6 +97,10 @@ def send_notice(content_list, title):
         f"https://{bark_host}/{bark_key}/"
         f"{title_encoded}/{content_encoded}?group=Product monitor"
     )
+
+    import requests
+    from requests.adapters import HTTPAdapter
+    from urllib3.util.retry import Retry
 
     session = requests.Session()
     retries = Retry(total=3, backoff_factor=1, status_forcelist=[500, 502, 503, 504])
@@ -101,6 +124,7 @@ def monitor():
     log.info("=== 开始一次商品监控 ===")
     current_titles = fetch_titles()
     previous_titles = load_titles_from_file()
+
     curr = Counter(current_titles)
     prev = Counter(previous_titles)
 
@@ -121,6 +145,7 @@ def monitor():
     if new_items:
         log.info(f"发现新品: {new_items}")
         send_notice(new_items, "SportingLife 上新 Arc'teryx 了")
+
     if old_items:
         log.info(f"下架商品: {old_items}")
         send_notice(old_items, "SportingLife 下架 Arc'teryx 了")
