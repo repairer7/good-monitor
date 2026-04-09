@@ -22677,3 +22677,9 @@
 2026-04-09 09:00:45,737 [INFO] 获取到 25 个商品标题
 2026-04-09 09:00:45,746 [INFO] 从文件加载商品标题，共 25 项
 2026-04-09 09:00:45,747 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
+2026-04-09 10:00:39,596 [INFO] 日志系统初始化完成
+2026-04-09 10:00:39,596 [INFO] === 开始一次商品监控 ===
+2026-04-09 10:00:40,925 [INFO] 访问页面: https://www.sportinglife.ca/en-CA/arcteryx/sale/?prefn1=gender&prefv1=Men%27s
+2026-04-09 10:00:45,157 [INFO] 获取到 25 个商品标题
+2026-04-09 10:00:45,166 [INFO] 从文件加载商品标题，共 25 项
+2026-04-09 10:00:45,167 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
