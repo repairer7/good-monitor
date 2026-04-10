@@ -27897,3 +27897,11 @@
 2026-04-10 13:00:33,629 [INFO] 获取到 43 个商品标题
 2026-04-10 13:00:33,630 [INFO] 从文件加载商品标题，共 43 项
 2026-04-10 13:00:33,630 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-04-10 14:00:37,892 [INFO] 日志系统初始化完成
+2026-04-10 14:00:37,893 [INFO] === 开始一次商品监控 ===
+2026-04-10 14:00:37,893 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-04-10 14:00:39,571 [INFO] 获取到 44 个商品标题
+2026-04-10 14:00:39,573 [INFO] 从文件加载商品标题，共 43 项
+2026-04-10 14:00:39,573 [INFO] 发现新品: ["Broad Peak IN Hooded Jacket - Men's"]
+2026-04-10 14:00:40,753 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1775829640}
+2026-04-10 14:00:40,754 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
