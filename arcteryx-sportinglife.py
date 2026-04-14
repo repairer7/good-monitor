@@ -1,12 +1,17 @@
 import asyncio
-from playwright.async_api import async_playwright
 import os
 import json
 import logging
 import urllib.parse
 from collections import Counter
 
-# ========== 设置日志 ==========
+import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
+from playwright.async_api import async_playwright
+
+
+# ========== 日志配置 ==========
 log_dir = os.path.join(os.getcwd(), "tmp/good-monitor")
 os.makedirs(log_dir, exist_ok=True)
 log_path = os.path.join(log_dir, "ArcTeryx_Sportinglife.logo")
@@ -19,9 +24,9 @@ logging.basicConfig(
         logging.StreamHandler()
     ]
 )
-
 log = logging.getLogger()
 log.info("日志系统初始化完成")
+
 
 # ========== 配置参数 ==========
 URL = "https://www.sportinglife.ca/en-CA/arcteryx/sale/?prefn1=gender&prefv1=Men%27s"
@@ -85,8 +90,8 @@ def send_notice(content_list, title):
         return
 
     safe_list = [t.replace("/", "／") for t in content_list]
-
     content = "\n".join(safe_list)
+
     content_encoded = urllib.parse.quote(content)
     title_encoded = urllib.parse.quote(title)
 
@@ -98,18 +103,12 @@ def send_notice(content_list, title):
         f"{title_encoded}/{content_encoded}?group=Product monitor"
     )
 
-    import requests
-    from requests.adapters import HTTPAdapter
-    from urllib3.util.retry import Retry
-
     session = requests.Session()
     retries = Retry(total=3, backoff_factor=1, status_forcelist=[500, 502, 503, 504])
     session.mount('https://', HTTPAdapter(max_retries=retries))
     session.mount('http://', HTTPAdapter(max_retries=retries))
 
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
-    }
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
 
     try:
         response = session.get(url, headers=headers, timeout=10)
