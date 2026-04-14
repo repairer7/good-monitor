@@ -2384,3 +2384,11 @@
 2026-04-14 17:00:51,168 [INFO] 发现新品: ['Gamma MX连帽衣 男装', 'Beta SL 夹克 男装', 'Gamma Lightweight夹克 男装', 'Field Jacket 夹克 男装', 'Monitor大衣 男装', 'Indisce MX Blazer 西装外套 男装']
 2026-04-14 17:00:52,281 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1776186052}
 2026-04-14 17:00:52,282 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_official_titles.json
+2026-04-14 18:00:50,005 [INFO] 日志系统初始化完成
+2026-04-14 18:00:50,006 [INFO] === 开始一次商品监控 ===
+2026-04-14 18:00:50,482 [INFO] 打开页面: https://outlet.arcteryx.com/ca/zh/c/mens/shell-jackets
+2026-04-14 18:00:54,251 [INFO] 等待首屏商品渲染…
+2026-04-14 18:00:54,319 [INFO] 开始自动滚动加载所有商品…
+2026-04-14 18:00:56,053 [INFO] 抓取到 14 个商品名称
+2026-04-14 18:00:56,053 [INFO] 从文件加载商品标题，共 14 项
+2026-04-14 18:00:56,053 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_official_titles.json
