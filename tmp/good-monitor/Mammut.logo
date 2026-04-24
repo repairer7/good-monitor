@@ -29961,3 +29961,13 @@
 2026-04-24 19:00:36,129 [INFO] 下架商品: ["Banks GTX Hiking Boots - Men's", "Newport H2 Shoes - Men's", "HH QD Cargo Shorts 11 - Men's", "Lightwire Short Sleeve Tech Tee - Men's", "Sierra Shorts - Men's", "Baltoro 65L Backpack - Men's", "Moab Speed 2 Mid Gore-Tex Hiking Boots - Men's", "Down Sweater Vest - Men's", "Renegade GTX MID Hiking Boots - Men's", "Blaze 3 Layer Shell Pant - Men's", "Arc Eco Jacket - Men's", "Nord Graphic Crew Neck Sweatshirt - Men's", "Stratos Hiking Pack 44L - Men's", "Cielo Rain Jacket - Men's", "L.I.M Shield Hood - Men's", "Coastline Flannel Shirt - Men's", "Coppolo Merino Full-Zip Hoodie - Men's", "Teca Half-Zip Windbreaker - Men's", "Moab 3 Mid Waterproof Hiking Shoes - Men's", "Opside Jacket - Men's"]
 2026-04-24 19:00:36,435 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1777057236}
 2026-04-24 19:00:36,437 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-04-24 20:00:45,337 [INFO] 日志系统初始化完成
+2026-04-24 20:00:45,337 [INFO] === 开始一次商品监控 ===
+2026-04-24 20:00:45,338 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-04-24 20:00:45,661 [INFO] 获取到 48 个商品标题
+2026-04-24 20:00:45,662 [INFO] 从文件加载商品标题，共 48 项
+2026-04-24 20:00:45,662 [INFO] 发现新品: ["Anchor ¼-Zip Jacket - Men's"]
+2026-04-24 20:00:46,518 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1777060846}
+2026-04-24 20:00:46,519 [INFO] 下架商品: ["Gel-Nimbus 27 Running Shoes - Men's"]
+2026-04-24 20:00:46,657 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1777060846}
+2026-04-24 20:00:46,658 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
