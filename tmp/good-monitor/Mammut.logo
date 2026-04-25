@@ -30137,3 +30137,13 @@
 2026-04-25 19:00:34,669 [INFO] 获取到 48 个商品标题
 2026-04-25 19:00:34,670 [INFO] 从文件加载商品标题，共 48 项
 2026-04-25 19:00:34,670 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-04-25 20:00:36,805 [INFO] 日志系统初始化完成
+2026-04-25 20:00:36,806 [INFO] === 开始一次商品监控 ===
+2026-04-25 20:00:36,806 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-04-25 20:00:38,123 [INFO] 获取到 48 个商品标题
+2026-04-25 20:00:38,125 [INFO] 从文件加载商品标题，共 48 项
+2026-04-25 20:00:38,125 [INFO] 发现新品: ["Classic Thermal Merino 250 Base Layer Hoodie - Men's"]
+2026-04-25 20:00:39,204 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1777147239}
+2026-04-25 20:00:39,205 [INFO] 下架商品: ["Peregrine RFG trail running shoes - Men's"]
+2026-04-25 20:00:39,357 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1777147239}
+2026-04-25 20:00:39,358 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
