@@ -30125,3 +30125,9 @@
 2026-04-25 17:00:35,583 [INFO] 下架商品: ["Anchor ¼-Zip Jacket - Men's"]
 2026-04-25 17:00:36,149 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1777136436}
 2026-04-25 17:00:36,166 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-04-25 18:00:32,892 [INFO] 日志系统初始化完成
+2026-04-25 18:00:32,892 [INFO] === 开始一次商品监控 ===
+2026-04-25 18:00:32,892 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-04-25 18:00:34,674 [INFO] 获取到 48 个商品标题
+2026-04-25 18:00:34,675 [INFO] 从文件加载商品标题，共 48 项
+2026-04-25 18:00:34,675 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
