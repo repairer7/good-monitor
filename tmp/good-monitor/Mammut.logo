@@ -30313,3 +30313,13 @@
 2026-04-26 19:00:40,072 [INFO] 下架商品: ["Agility Peak 5 Trail Running Shoes - Men's"]
 2026-04-26 19:00:40,258 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1777230040}
 2026-04-26 19:00:40,259 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-04-26 20:00:39,649 [INFO] 日志系统初始化完成
+2026-04-26 20:00:39,649 [INFO] === 开始一次商品监控 ===
+2026-04-26 20:00:39,649 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-04-26 20:00:39,941 [INFO] 获取到 48 个商品标题
+2026-04-26 20:00:39,943 [INFO] 从文件加载商品标题，共 48 项
+2026-04-26 20:00:39,943 [INFO] 发现新品: ["185 Rock'N'Wool Long Pant - Men's"]
+2026-04-26 20:00:40,900 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1777233640}
+2026-04-26 20:00:40,901 [INFO] 下架商品: ["Oakley Perf 5 Utility Short - Men's"]
+2026-04-26 20:00:41,086 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1777233641}
+2026-04-26 20:00:41,088 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
