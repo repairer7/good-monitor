@@ -30503,3 +30503,11 @@
 2026-04-27 22:00:37,425 [INFO] 下架商品: ["Endorphin Pro 4 Running Shoes - Men's", "Alpine Pant - Men's", "Breeze Long Sleeve T-Shirt - Men's", "Ride 18 Running Shoes - Men's", "T3 Lightweight Hiker Eco Socks - Men's", "Classic Thermal Merino Base Layer 1/4 Zip - Men's", 'Altamesa 300 Trail Running Shoes - Men’s', "Gel-Nimbus 27 Running Shoes - Men's", "Nano Puff Vest - Men's", "Oakley Perf Terrain Shorts - Men's", "Guide 18 Running Shoes - Men's", "Enhance QDC Grip 4.0 Short Sleeve T-Shirt - Men's", "Mirage Flow Shoes - Men's", "Banks GTX Hiking Boots - Men's", "XA Pro 3D V9 GORE-TEX Trail Running Shoes - Men's", "Tech Trail Utility Shorts - Men's", "Golf Hybrid Shorts - Men's", "HH QD Cargo Shorts 11 - Men's", "Innovo GTX Mid Hiking Boots - Men's", "FWD Via Road Running Shoes - Men's", "Pathfinder GORE-TEX Shell Jacket - Men's", "185 Rock'N'Wool Long Pant - Men's"]
 2026-04-27 22:00:37,957 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1777327237}
 2026-04-27 22:00:37,958 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-04-27 23:00:38,919 [INFO] 日志系统初始化完成
+2026-04-27 23:00:38,919 [INFO] === 开始一次商品监控 ===
+2026-04-27 23:00:38,919 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-04-27 23:00:40,504 [INFO] 获取到 40 个商品标题
+2026-04-27 23:00:40,505 [INFO] 从文件加载商品标题，共 41 项
+2026-04-27 23:00:40,505 [INFO] 下架商品: ["Aenergy Ultra Low GTX Hiking Shoes - Men's"]
+2026-04-27 23:00:41,459 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1777330841}
+2026-04-27 23:00:41,460 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
