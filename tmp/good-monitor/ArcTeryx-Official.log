@@ -4838,3 +4838,11 @@
 2026-04-27 17:00:52,119 [INFO] 下架商品: ['Gamma MX连帽衣 男装', 'Alpha 夹克 男装', 'Gamma Lightweight夹克 男装', 'Indisce西装夹克 男装']
 2026-04-27 17:00:53,820 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1777309253}
 2026-04-27 17:00:53,822 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_official_titles.json
+2026-04-27 18:00:45,272 [INFO] 日志系统初始化完成
+2026-04-27 18:00:45,272 [INFO] === 开始一次商品监控 ===
+2026-04-27 18:00:45,743 [INFO] 打开页面: https://outlet.arcteryx.com/ca/zh/c/mens/shell-jackets
+2026-04-27 18:00:49,190 [INFO] 等待首屏商品渲染…
+2026-04-27 18:00:50,407 [INFO] 开始自动滚动加载所有商品…
+2026-04-27 18:00:52,137 [INFO] 抓取到 10 个商品名称
+2026-04-27 18:00:52,137 [INFO] 从文件加载商品标题，共 10 项
+2026-04-27 18:00:52,137 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_official_titles.json
