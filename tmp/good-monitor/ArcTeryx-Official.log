@@ -6582,3 +6582,11 @@
 2026-05-06 20:01:08,147 [INFO] 抓取到 10 个商品名称
 2026-05-06 20:01:08,147 [INFO] 从文件加载商品标题，共 10 项
 2026-05-06 20:01:08,148 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_official_titles.json
+2026-05-06 21:00:47,904 [INFO] 日志系统初始化完成
+2026-05-06 21:00:47,904 [INFO] === 开始一次商品监控 ===
+2026-05-06 21:00:48,487 [INFO] 打开页面: https://outlet.arcteryx.com/ca/zh/c/mens/shell-jackets
+2026-05-06 21:00:51,292 [INFO] 等待首屏商品渲染…
+2026-05-06 21:00:53,153 [INFO] 开始自动滚动加载所有商品…
+2026-05-06 21:00:54,935 [INFO] 抓取到 10 个商品名称
+2026-05-06 21:00:54,935 [INFO] 从文件加载商品标题，共 10 项
+2026-05-06 21:00:54,936 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_official_titles.json
