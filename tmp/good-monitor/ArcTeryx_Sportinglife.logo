@@ -27385,3 +27385,11 @@
 2026-05-12 11:00:46,895 [INFO] 下架商品: ["Men's Kyanite Hoody Jacket"]
 2026-05-12 11:00:47,753 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1778583647}
 2026-05-12 11:00:47,754 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
+2026-05-12 12:00:43,132 [INFO] 日志系统初始化完成
+2026-05-12 12:00:43,132 [INFO] === 开始一次商品监控 ===
+2026-05-12 12:00:43,547 [INFO] 访问页面: https://www.sportinglife.ca/en-CA/arcteryx/sale/?prefn1=gender&prefv1=Men%27s
+2026-05-12 12:00:47,183 [INFO] 获取到 26 个商品标题
+2026-05-12 12:00:47,191 [INFO] 从文件加载商品标题，共 25 项
+2026-05-12 12:00:47,192 [INFO] 发现新品: ["Men's Kyanite Hoody Jacket"]
+2026-05-12 12:00:48,187 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1778587248}
+2026-05-12 12:00:48,188 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
