@@ -9234,3 +9234,15 @@
 2026-05-20 16:01:05,790 [INFO] 抓取到 10 个商品名称
 2026-05-20 16:01:05,790 [INFO] 从文件加载商品标题，共 10 项
 2026-05-20 16:01:05,791 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_official_titles.json
+2026-05-20 17:01:28,387 [INFO] 日志系统初始化完成
+2026-05-20 17:01:28,387 [INFO] === 开始一次商品监控 ===
+2026-05-20 17:01:28,825 [INFO] 打开页面: https://outlet.arcteryx.com/ca/zh/c/mens/shell-jackets
+2026-05-20 17:01:33,483 [INFO] 等待首屏商品渲染…
+2026-05-20 17:01:33,530 [INFO] 开始自动滚动加载所有商品…
+2026-05-20 17:01:35,220 [INFO] 抓取到 17 个商品名称
+2026-05-20 17:01:35,220 [INFO] 从文件加载商品标题，共 10 项
+2026-05-20 17:01:35,220 [INFO] 发现新品: ['Incendo Airshell连帽衣 男装', 'Beta夹克 男装', 'Alpha Jacket 夹克 男装', 'Beta AR Jacket 夹克 男装', 'Solano连帽衣 男装', '高山向导夹克 男装', 'Alpha SV Jacket 夹克 男装', 'Alpha 夹克 男装']
+2026-05-20 17:01:37,298 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1779296497}
+2026-05-20 17:01:37,299 [INFO] 下架商品: ['Macai外套夹克 男装']
+2026-05-20 17:01:37,685 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1779296497}
+2026-05-20 17:01:37,686 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_official_titles.json
