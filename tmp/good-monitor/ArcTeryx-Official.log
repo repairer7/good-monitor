@@ -14380,3 +14380,11 @@
 2026-06-16 17:00:58,525 [INFO] 发现新品: ['Beta SL 夹克 男装', 'Sabre Relaxed连帽夹克 男装', 'Sabre SV Jacket 滑雪夹克 男装', 'Solano夹克 男装', 'Gamma MX连帽衣 男装', 'Serratus连帽衣 男装', 'Diode Jacket 夹克 男装', 'Quartic夹克 男装']
 2026-06-16 17:00:59,919 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1781629259}
 2026-06-16 17:00:59,920 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_official_titles.json
+2026-06-16 18:00:54,464 [INFO] 日志系统初始化完成
+2026-06-16 18:00:54,464 [INFO] === 开始一次商品监控 ===
+2026-06-16 18:00:54,889 [INFO] 打开页面: https://outlet.arcteryx.com/ca/zh/c/mens/shell-jackets
+2026-06-16 18:00:56,034 [INFO] 等待首屏商品渲染…
+2026-06-16 18:00:59,239 [INFO] 开始自动滚动加载所有商品…
+2026-06-16 18:01:02,079 [INFO] 抓取到 23 个商品名称
+2026-06-16 18:01:02,079 [INFO] 从文件加载商品标题，共 23 项
+2026-06-16 18:01:02,080 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_official_titles.json
