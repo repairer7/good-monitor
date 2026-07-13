@@ -1,4 +1,4 @@
-# good-monitor# Good Monitor
+# Good Monitor
 
 一个基于 Python、Playwright 和 GitHub Actions 的商品变化监控工具。
 
