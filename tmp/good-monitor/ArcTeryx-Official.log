@@ -19738,3 +19738,13 @@
 2026-07-14 19:00:54,872 [INFO] 抓取到 22 个商品名称
 2026-07-14 19:00:54,872 [INFO] 从文件加载商品标题，共 22 项
 2026-07-14 19:00:54,873 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_official_titles.json
+2026-07-14 20:00:46,879 [INFO] 日志系统初始化完成
+2026-07-14 20:00:46,879 [INFO] === 开始一次商品监控 ===
+2026-07-14 20:00:47,334 [INFO] 打开页面: https://outlet.arcteryx.com/ca/zh/c/mens/shell-jackets
+2026-07-14 20:00:50,690 [INFO] 等待首屏商品渲染…
+2026-07-14 20:00:52,245 [INFO] 开始自动滚动加载所有商品…
+2026-07-14 20:00:53,949 [INFO] 抓取到 21 个商品名称
+2026-07-14 20:00:53,949 [INFO] 从文件加载商品标题，共 22 项
+2026-07-14 20:00:53,949 [INFO] 下架商品: ['Solano夹克 男装']
+2026-07-14 20:00:55,085 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1784059255}
+2026-07-14 20:00:55,087 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_official_titles.json
