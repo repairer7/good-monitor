@@ -21068,3 +21068,13 @@
 2026-07-21 16:00:59,570 [INFO] 抓取到 21 个商品名称
 2026-07-21 16:00:59,570 [INFO] 从文件加载商品标题，共 21 项
 2026-07-21 16:00:59,571 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_official_titles.json
+2026-07-21 17:00:53,439 [INFO] 日志系统初始化完成
+2026-07-21 17:00:53,439 [INFO] === 开始一次商品监控 ===
+2026-07-21 17:00:53,790 [INFO] 打开页面: https://outlet.arcteryx.com/ca/zh/c/mens/shell-jackets
+2026-07-21 17:00:56,424 [INFO] 等待首屏商品渲染…
+2026-07-21 17:00:57,364 [INFO] 开始自动滚动加载所有商品…
+2026-07-21 17:00:59,026 [INFO] 抓取到 19 个商品名称
+2026-07-21 17:00:59,027 [INFO] 从文件加载商品标题，共 21 项
+2026-07-21 17:00:59,027 [INFO] 下架商品: ['Centroid Jacket 夹克 男装', 'Diode Jacket 夹克 男装']
+2026-07-21 17:00:59,223 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1784653259}
+2026-07-21 17:00:59,224 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_official_titles.json
