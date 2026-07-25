@@ -43425,3 +43425,13 @@
 2026-07-25 22:03:42,287 [INFO] 获取到 48 个商品标题
 2026-07-25 22:03:42,288 [INFO] 从文件加载商品标题，共 48 项
 2026-07-25 22:03:42,288 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-07-25 23:03:41,829 [INFO] 日志系统初始化完成
+2026-07-25 23:03:41,829 [INFO] === 开始一次商品监控 ===
+2026-07-25 23:03:41,829 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-07-25 23:03:43,032 [INFO] 获取到 48 个商品标题
+2026-07-25 23:03:43,034 [INFO] 从文件加载商品标题，共 48 项
+2026-07-25 23:03:43,034 [INFO] 发现新品: ["Crag IN Jacket - Men's", "Broad Peak Pro IN Hooded Jacket - Men's", "Aconcagua ML Hooded Jacket - Men's", "Arctic IV ML Jacket - Men's"]
+2026-07-25 23:03:44,206 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1785020624}
+2026-07-25 23:03:44,207 [INFO] 下架商品: ["Crater Pro Hardshell Hooded Jacket - Men's", "Eiger Free Advanced Hardshell Hooded Jacket - Men's", "Albula Insulated Hooded Jacket - Men's", "Better Gift Shop x Marmot Mammoth GORE-TEX Parka - Men's"]
+2026-07-25 23:03:44,609 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1785020624}
+2026-07-25 23:03:44,611 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
