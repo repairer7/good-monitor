@@ -45247,3 +45247,13 @@
 2026-08-04 12:00:44,420 [INFO] 获取到 48 个商品标题
 2026-08-04 12:00:44,422 [INFO] 从文件加载商品标题，共 48 项
 2026-08-04 12:00:44,422 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-08-04 13:00:48,027 [INFO] 日志系统初始化完成
+2026-08-04 13:00:48,027 [INFO] === 开始一次商品监控 ===
+2026-08-04 13:00:48,027 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-08-04 13:00:48,333 [INFO] 获取到 48 个商品标题
+2026-08-04 13:00:48,334 [INFO] 从文件加载商品标题，共 48 项
+2026-08-04 13:00:48,335 [INFO] 发现新品: ['Nirvana Backpack 35L', "Togir 2.0 3 Slide Harness - Men's", "Aenergy TR 5 Running Vest - Men's", "Ophir Fast Adjust Climbing Harness - Men's", "Alnasca Knit III Low GTX Approach Shoes - Men's"]
+2026-08-04 13:00:50,066 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1785848450}
+2026-08-04 13:00:50,067 [INFO] 下架商品: ["Albula Insulated Hooded Jacket - Men's", "Eiger Free Advanced Hardshell Hooded Jacket - Men's", "Ducan Light Hardshell Hooded Jacket - Men's", "Better Gift Shop x Marmot Mammoth GORE-TEX Parka - Men's", "Arctic IV ML Fleece Jacket - Men's"]
+2026-08-04 13:00:50,507 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1785848450}
+2026-08-04 13:00:50,508 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
