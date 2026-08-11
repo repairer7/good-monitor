@@ -25070,3 +25070,13 @@
 2026-08-11 16:04:04,287 [INFO] 抓取到 14 个商品名称
 2026-08-11 16:04:04,287 [INFO] 从文件加载商品标题，共 14 项
 2026-08-11 16:04:04,288 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_official_titles.json
+2026-08-11 17:00:59,435 [INFO] 日志系统初始化完成
+2026-08-11 17:00:59,435 [INFO] === 开始一次商品监控 ===
+2026-08-11 17:00:59,849 [INFO] 打开页面: https://outlet.arcteryx.com/ca/zh/c/mens/shell-jackets
+2026-08-11 17:01:02,666 [INFO] 等待首屏商品渲染…
+2026-08-11 17:01:04,261 [INFO] 开始自动滚动加载所有商品…
+2026-08-11 17:01:07,078 [INFO] 抓取到 12 个商品名称
+2026-08-11 17:01:07,078 [INFO] 从文件加载商品标题，共 14 项
+2026-08-11 17:01:07,079 [INFO] 下架商品: ['Alpha Jacket 夹克 男装', 'Demlo Hoody 连帽风壳卫衣 男装']
+2026-08-11 17:01:08,446 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1786467668}
+2026-08-11 17:01:08,447 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_official_titles.json
