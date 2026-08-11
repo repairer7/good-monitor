@@ -46495,3 +46495,13 @@
 2026-08-11 03:00:53,722 [INFO] 下架商品: ["Ophir Fast Adjust Climbing Harness - Men's", "Aenergy TR 5 Running Vest - Men's"]
 2026-08-11 03:00:54,096 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1786417254}
 2026-08-11 03:00:54,097 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-08-11 04:00:41,243 [INFO] 日志系统初始化完成
+2026-08-11 04:00:41,243 [INFO] === 开始一次商品监控 ===
+2026-08-11 04:00:41,243 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-08-11 04:00:41,593 [INFO] 获取到 48 个商品标题
+2026-08-11 04:00:41,594 [INFO] 从文件加载商品标题，共 48 项
+2026-08-11 04:00:41,595 [INFO] 发现新品: ["Ophir Fast Adjust Climbing Harness - Men's", "Aenergy TR 5 Running Vest - Men's"]
+2026-08-11 04:00:42,116 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1786420842}
+2026-08-11 04:00:42,117 [INFO] 下架商品: ["Granite Softshell Hooded Jacket - Men's", "Better Gift Shop x Marmot Mammoth GORE-TEX Parka - Men's"]
+2026-08-11 04:00:42,539 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1786420842}
+2026-08-11 04:00:42,540 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
