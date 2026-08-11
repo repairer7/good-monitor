@@ -46591,3 +46591,13 @@
 2026-08-11 15:00:49,362 [INFO] 获取到 48 个商品标题
 2026-08-11 15:00:49,363 [INFO] 从文件加载商品标题，共 48 项
 2026-08-11 15:00:49,363 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-08-11 16:03:48,617 [INFO] 日志系统初始化完成
+2026-08-11 16:03:48,617 [INFO] === 开始一次商品监控 ===
+2026-08-11 16:03:48,617 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-08-11 16:03:49,009 [INFO] 获取到 48 个商品标题
+2026-08-11 16:03:49,011 [INFO] 从文件加载商品标题，共 48 项
+2026-08-11 16:03:49,011 [INFO] 发现新品: ["Alnasca Knit III Low Approach Shoes - Men's"]
+2026-08-11 16:03:49,682 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1786464229}
+2026-08-11 16:03:49,683 [INFO] 下架商品: ["Aenergy TR 5 Running Vest - Men's"]
+2026-08-11 16:03:50,051 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1786464230}
+2026-08-11 16:03:50,053 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
