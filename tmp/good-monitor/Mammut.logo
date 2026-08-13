@@ -46933,3 +46933,9 @@
 2026-08-13 10:00:54,892 [INFO] 下架商品: ["Aenergy TR 5 Running Vest - Men's"]
 2026-08-13 10:00:55,318 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1786615255}
 2026-08-13 10:00:55,319 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-08-13 11:00:46,801 [INFO] 日志系统初始化完成
+2026-08-13 11:00:46,801 [INFO] === 开始一次商品监控 ===
+2026-08-13 11:00:46,801 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-08-13 11:00:47,304 [INFO] 获取到 48 个商品标题
+2026-08-13 11:00:47,305 [INFO] 从文件加载商品标题，共 48 项
+2026-08-13 11:00:47,305 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
