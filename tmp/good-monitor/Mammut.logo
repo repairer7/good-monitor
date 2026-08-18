@@ -47869,3 +47869,11 @@
 2026-08-18 18:00:44,547 [INFO] 获取到 47 个商品标题
 2026-08-18 18:00:44,548 [INFO] 从文件加载商品标题，共 47 项
 2026-08-18 18:00:44,548 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-08-18 19:00:44,335 [INFO] 日志系统初始化完成
+2026-08-18 19:00:44,335 [INFO] === 开始一次商品监控 ===
+2026-08-18 19:00:44,335 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-08-18 19:00:46,062 [INFO] 获取到 48 个商品标题
+2026-08-18 19:00:46,063 [INFO] 从文件加载商品标题，共 47 项
+2026-08-18 19:00:46,063 [INFO] 发现新品: ["Arctic Insulated Hooded Parka - Men's"]
+2026-08-18 19:00:46,593 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1787079646}
+2026-08-18 19:00:46,594 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
