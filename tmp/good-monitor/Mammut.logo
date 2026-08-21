@@ -48305,3 +48305,13 @@
 2026-08-21 16:00:40,556 [INFO] 下架商品: ["Ophir Fast Adjust Climbing Harness - Men's"]
 2026-08-21 16:00:41,079 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1787328041}
 2026-08-21 16:00:41,081 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-08-21 17:00:44,844 [INFO] 日志系统初始化完成
+2026-08-21 17:00:44,844 [INFO] === 开始一次商品监控 ===
+2026-08-21 17:00:44,844 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-08-21 17:00:46,471 [INFO] 获取到 48 个商品标题
+2026-08-21 17:00:46,473 [INFO] 从文件加载商品标题，共 48 项
+2026-08-21 17:00:46,473 [INFO] 发现新品: ["Ophir Fast Adjust Climbing Harness - Men's", "Ducan II Low GTX Hiking Shoes - Men's"]
+2026-08-21 17:00:47,195 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1787331647}
+2026-08-21 17:00:47,196 [INFO] 下架商品: ["Ultimate III Low GTX Hiking Shoes - Men's", "Alnasca Knit III Low Approach Shoes - Men's"]
+2026-08-21 17:00:47,523 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1787331647}
+2026-08-21 17:00:47,524 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
