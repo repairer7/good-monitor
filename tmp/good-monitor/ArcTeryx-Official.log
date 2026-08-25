@@ -27730,3 +27730,11 @@
 2026-08-25 17:00:59,795 [INFO] 下架商品: ['Centroid Jacket 夹克 男装']
 2026-08-25 17:01:00,232 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1787677260}
 2026-08-25 17:01:00,233 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_official_titles.json
+2026-08-25 18:00:51,616 [INFO] 日志系统初始化完成
+2026-08-25 18:00:51,616 [INFO] === 开始一次商品监控 ===
+2026-08-25 18:00:52,103 [INFO] 打开页面: https://outlet.arcteryx.com/ca/zh/c/mens/shell-jackets
+2026-08-25 18:00:55,220 [INFO] 等待首屏商品渲染…
+2026-08-25 18:00:56,800 [INFO] 开始自动滚动加载所有商品…
+2026-08-25 18:01:00,010 [INFO] 抓取到 22 个商品名称
+2026-08-25 18:01:00,010 [INFO] 从文件加载商品标题，共 22 项
+2026-08-25 18:01:00,010 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_official_titles.json
