@@ -42713,3 +42713,9 @@
 2026-08-26 08:00:49,935 [INFO] 发现新品: ["Men's Cormac Logo Short Sleeve T-Shirt"]
 2026-08-26 08:00:50,333 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1787731250}
 2026-08-26 08:00:50,334 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
+2026-08-26 09:00:44,384 [INFO] 日志系统初始化完成
+2026-08-26 09:00:44,385 [INFO] === 开始一次商品监控 ===
+2026-08-26 09:00:46,097 [INFO] 访问页面: https://www.sportinglife.ca/en-CA/arcteryx/sale/?prefn1=gender&prefv1=Men%27s
+2026-08-26 09:00:49,587 [INFO] 获取到 16 个商品标题
+2026-08-26 09:00:49,598 [INFO] 从文件加载商品标题，共 16 项
+2026-08-26 09:00:49,599 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_sportinglife_titles.json
