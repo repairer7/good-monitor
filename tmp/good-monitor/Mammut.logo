@@ -49243,3 +49243,13 @@
 2026-08-26 17:00:43,111 [INFO] 获取到 48 个商品标题
 2026-08-26 17:00:43,112 [INFO] 从文件加载商品标题，共 48 项
 2026-08-26 17:00:43,113 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-08-26 18:00:45,058 [INFO] 日志系统初始化完成
+2026-08-26 18:00:45,058 [INFO] === 开始一次商品监控 ===
+2026-08-26 18:00:45,058 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-08-26 18:00:45,502 [INFO] 获取到 48 个商品标题
+2026-08-26 18:00:45,504 [INFO] 从文件加载商品标题，共 48 项
+2026-08-26 18:00:45,504 [INFO] 发现新品: ["Ophir Fast Adjust Climbing Harness - Men's"]
+2026-08-26 18:00:46,132 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1787767246}
+2026-08-26 18:00:46,133 [INFO] 下架商品: ["Better Gift Shop x Marmot Mammoth GORE-TEX Parka - Men's"]
+2026-08-26 18:00:46,466 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1787767246}
+2026-08-26 18:00:46,467 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
