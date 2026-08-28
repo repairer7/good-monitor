@@ -49495,3 +49495,13 @@
 2026-08-28 03:00:41,178 [INFO] 获取到 48 个商品标题
 2026-08-28 03:00:41,179 [INFO] 从文件加载商品标题，共 48 项
 2026-08-28 03:00:41,179 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-08-28 04:01:02,073 [INFO] 日志系统初始化完成
+2026-08-28 04:01:02,073 [INFO] === 开始一次商品监控 ===
+2026-08-28 04:01:02,073 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-08-28 04:01:03,992 [INFO] 获取到 48 个商品标题
+2026-08-28 04:01:03,993 [INFO] 从文件加载商品标题，共 48 项
+2026-08-28 04:01:03,993 [INFO] 发现新品: ["Massone Midlayer Hooded Jacket - Men's", "Aconcagua ML Hooded Jacket - Men's"]
+2026-08-28 04:01:04,871 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1787889664}
+2026-08-28 04:01:04,872 [INFO] 下架商品: ["Aenergy MTN Low GTX Hiking Shoes - Men's", "Aenergy Hike Low Hiking Shoes - Men's"]
+2026-08-28 04:01:05,505 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1787889665}
+2026-08-28 04:01:05,506 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
