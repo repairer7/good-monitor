@@ -49619,3 +49619,13 @@
 2026-08-28 17:00:42,367 [INFO] 下架商品: ["Aenergy WB Hooded Jacket - Men's", "Aenergy TR 5 Running Vest - Men's", "Togir 2.0 3 Slide Harness - Men's", "Ophir Fast Adjust Climbing Harness - Men's", "Trovat Logo T-Shirt - Men's", "Alvra Summer Long Sleeve Shirt - Men's", "Innominata Light Midlayer Jacket - Men's", "Taiss Light Hardshell Hooded Jacket - Men's", "Core Midlayer Logo Crew Neck Sweater - Men's", "Arch Rock Long Sleeve Crewneck Sweater - Men's"]
 2026-08-28 17:00:42,857 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1787936442}
 2026-08-28 17:00:42,859 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-08-28 18:00:43,937 [INFO] 日志系统初始化完成
+2026-08-28 18:00:43,937 [INFO] === 开始一次商品监控 ===
+2026-08-28 18:00:43,937 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-08-28 18:00:47,262 [INFO] 获取到 48 个商品标题
+2026-08-28 18:00:47,264 [INFO] 从文件加载商品标题，共 48 项
+2026-08-28 18:00:47,264 [INFO] 发现新品: ["Aenergy WB Hooded Jacket - Men's"]
+2026-08-28 18:00:49,383 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1787940049}
+2026-08-28 18:00:49,384 [INFO] 下架商品: ["Rime Light Hybrid Insulated Hooded Jacket - Men's"]
+2026-08-28 18:00:50,645 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1787940050}
+2026-08-28 18:00:50,647 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
