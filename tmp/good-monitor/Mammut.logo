@@ -50209,3 +50209,9 @@
 2026-08-31 22:00:47,302 [INFO] 下架商品: ["Runbold IV Shorts - Men's", "Crag IN Jacket - Men's", "Eiger Free Advanced Hardshell Hooded Jacket - Men's", "Better Gift Shop x Marmot Mammoth GORE-TEX Parka - Men's"]
 2026-08-31 22:00:47,608 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1788213647}
 2026-08-31 22:00:47,610 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-08-31 23:00:38,945 [INFO] 日志系统初始化完成
+2026-08-31 23:00:38,945 [INFO] === 开始一次商品监控 ===
+2026-08-31 23:00:38,945 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-08-31 23:00:39,300 [INFO] 获取到 48 个商品标题
+2026-08-31 23:00:39,301 [INFO] 从文件加载商品标题，共 48 项
+2026-08-31 23:00:39,302 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
