@@ -50281,3 +50281,13 @@
 2026-09-01 08:00:43,954 [INFO] 下架商品: ["Tamaro Midlayer Hooded Jacket - Men's", "Taiss Light Hardshell Hooded Jacket - Men's", "Core Midlayer Logo Crew Neck Sweater - Men's", "Aenergy Hike Low Hiking Shoes - Men's"]
 2026-09-01 08:00:44,173 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1788249644}
 2026-09-01 08:00:44,174 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
+2026-09-01 09:00:39,842 [INFO] 日志系统初始化完成
+2026-09-01 09:00:39,842 [INFO] === 开始一次商品监控 ===
+2026-09-01 09:00:39,843 [INFO] 正在请求页面: https://www.thelasthunt.com/search?query=mammut%20men
+2026-09-01 09:00:40,104 [INFO] 获取到 48 个商品标题
+2026-09-01 09:00:40,106 [INFO] 从文件加载商品标题，共 48 项
+2026-09-01 09:00:40,106 [INFO] 发现新品: ["Tamaro Midlayer Hooded Jacket - Men's", "Taiss Light Hardshell Hooded Jacket - Men's", "Core Midlayer Logo Crew Neck Sweater - Men's", "Aenergy Hike Low Hiking Shoes - Men's"]
+2026-09-01 09:00:41,063 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1788253241}
+2026-09-01 09:00:41,064 [INFO] 下架商品: ["Runbold IV Shorts - Men's", "Crag IN Jacket - Men's", "Eiger Free Advanced Hardshell Hooded Jacket - Men's", "Better Gift Shop x Marmot Mammoth GORE-TEX Parka - Men's"]
+2026-09-01 09:00:41,438 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1788253241}
+2026-09-01 09:00:41,546 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/mammut_titles.json
