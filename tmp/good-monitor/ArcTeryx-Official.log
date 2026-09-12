@@ -30964,3 +30964,13 @@
 2026-09-11 23:00:53,269 [INFO] 抓取到 15 个商品名称
 2026-09-11 23:00:53,269 [INFO] 从文件加载商品标题，共 15 项
 2026-09-11 23:00:53,269 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_official_titles.json
+2026-09-12 00:00:48,757 [INFO] 日志系统初始化完成
+2026-09-12 00:00:48,757 [INFO] === 开始一次商品监控 ===
+2026-09-12 00:00:49,212 [INFO] 打开页面: https://outlet.arcteryx.com/ca/zh/c/mens/shell-jackets
+2026-09-12 00:00:53,061 [INFO] 等待首屏商品渲染…
+2026-09-12 00:00:53,175 [INFO] 开始自动滚动加载所有商品…
+2026-09-12 00:00:56,144 [INFO] 抓取到 16 个商品名称
+2026-09-12 00:00:56,144 [INFO] 从文件加载商品标题，共 15 项
+2026-09-12 00:00:56,144 [INFO] 发现新品: ['Sabre SV Jacket 滑雪夹克 男装']
+2026-09-12 00:00:57,346 [INFO] 推送结果: {"code":200,"message":"success","timestamp":1789171257}
+2026-09-12 00:00:57,347 [INFO] 商品标题已保存到文件: /home/runner/work/good-monitor/good-monitor/tmp/good-monitor/arcteryx_official_titles.json
