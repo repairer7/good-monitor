@@ -33,11 +33,11 @@ jobs:
           BARK_HOST: ${{ secrets.BARK_HOST }}
           BARK_KEY: ${{ secrets.BARK_KEY }}
 
-      - name: Run Arc'teryx Sporting Life script
-        run: python arcteryx-sportinglife.py
-        env:
-          BARK_HOST: ${{ secrets.BARK_HOST }}
-          BARK_KEY: ${{ secrets.BARK_KEY }}
+      #- name: Run Arc'teryx Sporting Life script
+        #run: python arcteryx-sportinglife.py
+        #env:
+          #BARK_HOST: ${{ secrets.BARK_HOST }}
+          #BARK_KEY: ${{ secrets.BARK_KEY }}
 
       - name: Run Arc'teryx Official script
         run: python arcteryx-offical.py
