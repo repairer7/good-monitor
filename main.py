@@ -79,8 +79,7 @@ def run_monitor_task(module):
     except Exception as e:
         print(f"[{name}] 抓取失败: {e}")
         traceback.print_exc()
-        # 对于异常，仍然立即单独发送失败通知
-        send_notice(f"抓取发生异常，请检查日志。异常信息: {e}", f"{name} 监控失败")
+        # 发生异常时直接跳过，不发送通知
         return None
 
     data_file_name = module.DATA_FILE_NAME
