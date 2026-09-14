@@ -1,6 +1,7 @@
 requests
 beautifulsoup4
-playwright
+playwright==1.42.0
+playwright-stealth==1.0.6
 lxml
 pandas
 urllib3

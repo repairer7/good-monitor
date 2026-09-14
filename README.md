@@ -33,17 +33,16 @@
 ├── .github/
 │   └── workflows/
 │       └── monitor.yml                 # GitHub Actions 工作流
-├── Mammut.py                           # TheLastHunt Mammut 监控
-├── arcteryx-offical.py                 # Arc'teryx 官方 Outlet 监控
-├── arcteryx-sportinglife.py            # Sporting Life Arc'teryx 监控
+├── main.py                             # 统一监控入口
+├── Mammut.py                           # TheLastHunt Mammut 监控模块
+├── arcteryx_offical.py                 # Arc'teryx 官方 Outlet 监控模块
+├── arcteryx_sportinglife.py            # Sporting Life Arc'teryx 监控模块
 ├── requirements.txt                    # Python 依赖
 ├── README.md                           # 项目说明
-└── tmp/
-    └── good-monitor/
-        ├── mammut_titles.json          # Mammut 历史商品列表
-        ├── arcteryx_official_titles.json
-        ├── arcteryx_sportinglife_titles.json
-        └── *.log                       # 运行日志
+└── good-monitor/
+    ├── mammut_titles.json              # Mammut 历史商品列表
+    ├── arcteryx_official_titles.json
+    └── arcteryx_sportinglife_titles.json
 ```
 
 ## 工作原理
@@ -147,9 +146,7 @@ $env:BARK_KEY="your-bark-key"
 ### 执行脚本
 
 ```bash
-python Mammut.py
-python arcteryx-offical.py
-python arcteryx-sportinglife.py
+python main.py
 ```
 
 首次运行时，历史商品数据文件可能不存在，程序会将当前抓取结果作为初始基准。首次运行通常不会产生新品或下架通知；从第二次运行开始，程序才会基于历史数据识别变化。

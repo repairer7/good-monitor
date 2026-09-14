@@ -27,20 +27,8 @@ jobs:
       - name: Install Playwright browsers
         run: python -m playwright install
 
-      - name: Run Mammut script
-        run: python Mammut.py
-        env:
-          BARK_HOST: ${{ secrets.BARK_HOST }}
-          BARK_KEY: ${{ secrets.BARK_KEY }}
-
-      #- name: Run Arc'teryx Sporting Life script
-        #run: python arcteryx-sportinglife.py
-        #env:
-          #BARK_HOST: ${{ secrets.BARK_HOST }}
-          #BARK_KEY: ${{ secrets.BARK_KEY }}
-
-      - name: Run Arc'teryx Official script
-        run: python arcteryx-offical.py
+      - name: Run all monitors
+        run: python main.py
         env:
           BARK_HOST: ${{ secrets.BARK_HOST }}
           BARK_KEY: ${{ secrets.BARK_KEY }}
